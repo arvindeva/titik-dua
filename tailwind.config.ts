@@ -7,7 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -16,6 +16,10 @@ const config = {
       screens: {
         "2xl": "1400px",
       },
+    },
+    colors: {
+      'td-black': "#000000",
+      'td-white': "#FFFFFF",
     },
     extend: {
       colors: {
