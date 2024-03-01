@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Work_Sans } from "next/font/google";
+
 import "./globals.css";
 import NavBar from "@/components/ui/navbar";
-
-const workSans = Work_Sans({ subsets: ["latin"] });
+import { workSans } from "@/app/fonts/fonts";
 
 export const metadata: Metadata = {
   title: "Titik Dua Ubud",

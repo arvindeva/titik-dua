@@ -24,6 +24,9 @@ const config = {
       "td-daun": "#457D4A",
     },
     extend: {
+      spacing: {
+        content: "1440px",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
