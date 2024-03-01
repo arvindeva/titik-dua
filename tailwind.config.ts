@@ -20,6 +20,7 @@ const config = {
     colors: {
       'td-black': "#000000",
       'td-white': "#FFFFFF",
+      'td-beige': "#F5F3EB"
     },
     extend: {
       colors: {
