@@ -17,17 +17,15 @@ const config = {
         "2xl": "1400px",
       },
     },
-    colors: {
-      "td-black": "#000000",
-      "td-white": "#FFFFFF",
-      "td-beige": "#F5F3EB",
-      "td-daun": "#457D4A",
-    },
     extend: {
       spacing: {
         content: "1440px",
       },
       colors: {
+        "td-black": "#181E1B",
+        "td-white": "#FFFFFF",
+        "td-beige": "#F5F3EB",
+        "td-daun": "#457D4A",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
