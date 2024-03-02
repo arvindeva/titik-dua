@@ -43,7 +43,7 @@ function RoomCard() {
 
 export default function Stay() {
   return (
-    <section className="bg-white w-full py-5  pb-60 overflow-visible">
+    <section className="bg-white w-full py-5  overflow-visible">
       <div className="px-4 max-w-content mx-auto lg:px-12">
         <h1
           className={cn(

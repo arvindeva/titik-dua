@@ -50,14 +50,14 @@ function CheckAvailability() {
 export default function Hero() {
   return (
     <div className="relative">
-      <div className="relative h-[calc(100vh-80px)]  lg:h-screen lg:max-h-[769px] overflow-hidden">
+      <div className="relative flex items-center justify-center  h-[calc(100vh-80px)]  lg:h-screen lg:max-h-[769px] overflow-hidden">
         <video
           autoPlay
           loop
           muted
           className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
         >
-          <source src="/videos/td-hero-video.mp4" type="video/mp4" />
+          <source src="/videos/td-hero-mobile.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
