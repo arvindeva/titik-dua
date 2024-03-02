@@ -2,13 +2,6 @@
 import { kobe } from '@/app/fonts/fonts';
 import { cn } from '@/lib/utils';
 import { Card, CardContent } from '@/components/ui/card';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
 import Image from 'next/image';
 import { Button } from '../ui/button';
 
