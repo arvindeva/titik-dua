@@ -50,7 +50,7 @@ function CheckAvailability() {
 export default function Hero() {
   return (
     <div className="relative">
-      <div className="relative  h-screen max-h-[769px] overflow-hidden">
+      <div className="relative h-[calc(100vh-80px)]  lg:h-screen lg:max-h-[769px] overflow-hidden">
         <video
           autoPlay
           loop

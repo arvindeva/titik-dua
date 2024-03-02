@@ -1,6 +1,8 @@
 import { kobe } from '@/app/fonts/fonts';
 import { cn } from '@/lib/utils';
 
+function Card() {}
+
 export default function Stay() {
   return (
     <section className="bg-white w-full py-5 px-4">

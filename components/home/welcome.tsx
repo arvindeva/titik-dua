@@ -15,14 +15,14 @@ export default function Welcome() {
           welcome to tanah titik dua
         </div>
         <div className="lg:w-1/2">
-          <p className="text-sm lg:text-base mb-10 lg:mb-8 lg:tracking-tight leading-snug mt-2">
+          <p className="text-sm lg:text-base mb-10 lg:mb-8 lg:tracking-tight leading-snug mt-2 font-normal">
             An independent boutique hotel showcasing contemporary Indonesian
             design, art, and culture. Titik Dua offers design-savvy travelers a
             unique stay experience with custom-designed rooms, with a
             contemporary take on design, gastronomy, and immersive workshops and
             talks on culture, innovation, and wellness
           </p>
-          <Button className="w-full lg:w-auto text-2xl px-8">
+          <Button className="w-full lg:w-auto text-xl px-8 font-normal">
             More About Us
           </Button>
         </div>
