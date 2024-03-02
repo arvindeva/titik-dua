@@ -3,6 +3,7 @@ import { Input } from '@/components/ui/input';
 import { kobe } from '../../app/fonts/fonts';
 import { cn } from '@/lib/utils';
 import * as React from 'react';
+import { Suspense } from 'react';
 
 function Label() {
   return (

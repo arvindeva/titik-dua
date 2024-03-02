@@ -7,6 +7,7 @@ import { Button } from './button';
 import MenuDesktop from './menu-desktop';
 
 import LogoFull from '@/components/logos/logo-full';
+import LogoMobile from '../logos/logo-mobile';
 
 function DesktopNavBar() {
   return (
@@ -29,14 +30,10 @@ function DesktopNavBar() {
 
 function MobileNavBar() {
   return (
-    <header className="sm:hidden sticky top-0 z-50 w-full bg-black text-td-white h-[80px] px-10">
+    <header className="sm:hidden sticky top-0 z-50 w-full bg-black text-td-white h-[80px] px-4">
       <div className="mx-auto max-w-[1400px] flex flex-row items-center h-full justify-between w-full">
-        <Link href="/">
-          <div className="-translate-y-1 display flex flex-row gap-x-1 items-baseline">
-            {' '}
-            <span className="text-4xl tracking-wide"> t</span>
-            <span className="font-black text-[46px]">:</span>
-          </div>
+        <Link className="h-7" href="/">
+          <LogoMobile />
         </Link>
         <MenuDesktop />
       </div>

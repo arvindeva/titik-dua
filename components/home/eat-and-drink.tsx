@@ -8,7 +8,7 @@ import { Button } from '../ui/button';
 function EatAndDrinkCard() {
   return (
     <div className="">
-      <Card className="w-[164px] rounded-none border-0 bg-transparent text-td-black shadow-none">
+      <Card className="w-[164px] rounded-none border-0 bg-transparent pb-12 text-td-black shadow-none">
         <div className="relative h-[164px] w-full bg-transparent overflow-hidden mb-3">
           <Image
             className="object-cover w-[164px] h-[164px]"
