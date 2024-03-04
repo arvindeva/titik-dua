@@ -51,8 +51,13 @@ function CheckAvailability() {
 export default function Hero() {
   return (
     <div className="relative">
-      <div className="relative flex items-center justify-center  h-[calc(100vh-80px)]  lg:h-screen lg:max-h-[769px] overflow-hidden">
-        <video autoPlay loop muted className="lg:hidden z-10">
+      <div className=" bg-td-black relative flex items-center justify-center  h-[calc(100vh-80px)]  lg:h-screen lg:max-h-[769px] overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          className="md:hidden z-10 min-h-full w-auto absolute max-w-full object-cover"
+        >
           <source src="/videos/td-hero-mobile.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -60,7 +65,7 @@ export default function Hero() {
           autoPlay
           loop
           muted
-          className="hidden lg:inline-block absolute z-10 w-auto min-w-full min-h-full max-w-none"
+          className="hidden md:inline-block absolute z-10 w-auto min-w-full min-h-full max-w-none"
         >
           <source src="/videos/td-hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
