@@ -61,7 +61,7 @@ export default function Hero() {
           <source src="/videos/td-hero-mobile.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <video
+        {/* <video
           autoPlay
           loop
           muted
@@ -69,7 +69,7 @@ export default function Hero() {
         >
           <source src="/videos/td-hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
       </div>
       <CheckAvailability />
     </div>
