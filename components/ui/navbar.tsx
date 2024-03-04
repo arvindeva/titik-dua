@@ -33,7 +33,7 @@ function MobileNavBar() {
     <header className="sm:hidden sticky top-0 z-50 w-full bg-black text-td-white h-[80px] px-4">
       <div className="mx-auto max-w-[1400px] flex flex-row items-center h-full justify-between w-full">
         <Link className="h-7" href="/">
-          <LogoMobile />
+          <LogoMobile color="white" />
         </Link>
         <MenuDesktop />
       </div>
