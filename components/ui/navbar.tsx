@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { FaWhatsapp } from 'react-icons/fa';
+import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
 
-import { Button } from './button';
-import MenuDesktop from './menu-desktop';
+import { Button } from "./button";
+import Menu from "./menu";
 
-import LogoFull from '@/components/logos/logo-full';
-import LogoMobile from '../logos/logo-mobile';
+import LogoFull from "@/components/logos/logo-full";
+import LogoMobile from "../logos/logo-mobile";
 
 function DesktopNavBar() {
   return (
@@ -21,7 +21,7 @@ function DesktopNavBar() {
           <Button variant="secondary">
             <p className="text-2xl px-4 py-4">book now</p>
           </Button>
-          <MenuDesktop />
+          <Menu />
         </div>
       </div>
     </header>
@@ -35,7 +35,7 @@ function MobileNavBar() {
         <Link className="h-7" href="/">
           <LogoMobile color="white" />
         </Link>
-        <MenuDesktop />
+        <Menu />
       </div>
     </header>
   );

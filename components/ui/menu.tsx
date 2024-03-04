@@ -1,6 +1,6 @@
-'use-client';
+"use-client";
 
-import { Button } from './button';
+import { Button } from "./button";
 import {
   Sheet,
   SheetContent,
@@ -9,18 +9,17 @@ import {
   SheetTitle,
   SheetClose,
   SheetTrigger,
-} from '@/components/ui/sheet';
-import Link from 'next/link';
-import LogoMobile from '../logos/logo-mobile';
-import { cn } from '@/lib/utils';
-import { kobe } from '@/app/fonts/fonts';
-import { FaInstagram, FaFacebook, FaSpotify } from 'react-icons/fa';
+} from "@/components/ui/sheet";
+import Link from "next/link";
+import LogoMobile from "../logos/logo-mobile";
+import { cn } from "@/lib/utils";
+import { kobe } from "@/app/fonts/fonts";
+import { FaInstagram, FaFacebook, FaSpotify } from "react-icons/fa";
 
-export default function MenuDesktop() {
+export default function menu() {
   return (
     <Sheet>
       <SheetTrigger>
-        {/* <Button size="icon" variant="icon"> */}
         <svg
           width="40"
           height="16"
@@ -31,14 +30,15 @@ export default function MenuDesktop() {
           <rect width="40" height="4" fill="white" />
           <rect y="12" width="40" height="4" fill="white" />
         </svg>
-        {/* </Button> */}
       </SheetTrigger>
       <SheetContent side="top" className="h-full p-0 bg-td-beige">
         <SheetHeader>
           <div className="sm:hidden sticky top-0 z-50 w-full  text-td-black h-[80px] px-4">
             <div className="mx-auto max-w-[1400px] flex flex-row items-center h-full justify-between w-full">
               <Link className="h-7" href="/">
-                <LogoMobile color="black" />
+                <SheetClose>
+                  <LogoMobile color="black" />
+                </SheetClose>
               </Link>
               <SheetClose className="bg-transparent transform -translate-x-1.5">
                 <svg
@@ -70,27 +70,39 @@ export default function MenuDesktop() {
           <div>
             <ul
               className={cn(
-                'flex flex-col space-y-0 text-[32px] font-bold mt-8',
+                "flex flex-col space-y-0 text-[32px] font-bold mt-8",
                 kobe.className
               )}
             >
               <li>
-                <Link href="/stay">stay</Link>
+                <Link href="/stay">
+                  <SheetClose>stay</SheetClose>
+                </Link>
               </li>
               <li>
-                <Link href="/stay">what&apos;s on</Link>
+                <Link href="/events">
+                  <SheetClose>what&apos;s on</SheetClose>
+                </Link>
               </li>
               <li>
-                <Link href="/stay">about us</Link>
+                <Link href="/about">
+                  <SheetClose>about us</SheetClose>
+                </Link>
               </li>
               <li>
-                <Link href="/events">private events</Link>
+                <Link href="/private-events">
+                  <SheetClose>private events</SheetClose>
+                </Link>
               </li>
               <li>
-                <Link href="/food-and-drinks">restaurants & bars +</Link>
+                <Link href="/foods-and-drinks">
+                  <SheetClose>restaurants & bars +</SheetClose>
+                </Link>
               </li>
               <li>
-                <Link href="/contact">contact</Link>
+                <Link href="/contact">
+                  <SheetClose>contact</SheetClose>
+                </Link>
               </li>
             </ul>
           </div>
