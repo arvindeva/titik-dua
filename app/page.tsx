@@ -4,6 +4,7 @@ import Stay from '@/components/home/stay';
 import Events from '@/components/home/events';
 import CTAMobile from '@/components/home/cta-mobile';
 import EatAndDrink from '@/components/home/eat-and-drink';
+import PrivateEvents from '@/components/home/private-events';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Events />
       <CTAMobile />
       <EatAndDrink />
+      <PrivateEvents />
     </main>
   );
 }
