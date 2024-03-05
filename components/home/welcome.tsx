@@ -8,14 +8,14 @@ export default function Welcome() {
       <div className="flex flex-col lg:flex-row gap-y-10 px-4 py-10 lg:px-12 lg:py-32 max-w-content mx-auto">
         <div
           className={cn(
-            'lg:w-1/2 font-bold text-[56px] lg:text-[80px] lg:tracking-normal leading-[0.8]',
+            'lg:w-1/2 font-bold text-[52px] lg:text-[80px] lg:tracking-normal leading-[0.8]',
             kobe.className
           )}
         >
           welcome to tanah titik dua
         </div>
         <div className="lg:w-1/2">
-          <p className="text-sm lg:text-base mb-10 lg:mb-8 lg:tracking-tight leading-snug mt-2 font-normal">
+          <p className="text-sm lg:text-base mb-10 lg:tracking-tight leading-snug font-normal">
             An independent boutique hotel showcasing contemporary Indonesian
             design, art, and culture. Titik Dua offers design-savvy travelers a
             unique stay experience with custom-designed rooms, with a

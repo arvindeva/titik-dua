@@ -44,7 +44,7 @@ export default function EatAndDrink() {
       <div className="px-4 max-w-content mx-auto lg:px-12">
         <h1
           className={cn(
-            'text-[40px] font-bold tracking-wide lg:text-[64px] mb-10',
+            'text-[40px] font-bold tracking-wide lg:text-[64px] mb-8 leading-none',
             kobe.className
           )}
         >
