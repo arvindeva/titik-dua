@@ -71,9 +71,7 @@ export default function Hero() {
           Your browser does not support the video tag.
         </video> */}
       </div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-td-white">
-        <span className="loader"></span>
-      </div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-td-white"></div>
       <CheckAvailability />
     </div>
   );
