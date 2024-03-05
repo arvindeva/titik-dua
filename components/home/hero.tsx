@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { kobe } from "../../app/fonts/fonts";
-import { cn } from "@/lib/utils";
-import * as React from "react";
-import { Suspense } from "react";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { kobe } from '../../app/fonts/fonts';
+import { cn } from '@/lib/utils';
+import * as React from 'react';
+import { Suspense } from 'react';
 
 function Label() {
   return (
@@ -23,7 +23,7 @@ function CheckAvailability() {
       <div className="flex flex-row gap-x-4 items-center justify-center">
         <p
           className={cn(
-            "text-nowrap font-semibold text-[28px] mr-4",
+            'text-nowrap font-semibold text-[28px] mr-4',
             kobe.className
           )}
         >
@@ -52,7 +52,7 @@ export default function Hero() {
   return (
     <div className="relative">
       <div className=" bg-td-black relative flex items-center justify-center  h-[calc(100vh-80px)]  lg:h-screen lg:max-h-[769px] overflow-hidden">
-        <video
+        {/* <video
           autoPlay
           loop
           muted
@@ -60,7 +60,7 @@ export default function Hero() {
         >
           <source src="/videos/td-hero-mobile.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
         {/* <video
           autoPlay
           loop
@@ -70,6 +70,9 @@ export default function Hero() {
           <source src="/videos/td-hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video> */}
+      </div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-td-white">
+        <span className="loader"></span>
       </div>
       <CheckAvailability />
     </div>
