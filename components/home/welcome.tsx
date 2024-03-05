@@ -22,7 +22,7 @@ export default function Welcome() {
             contemporary take on design, gastronomy, and immersive workshops and
             talks on culture, innovation, and wellness
           </p>
-          <Button className="w-full lg:w-auto text-xl px-8 font-normal">
+          <Button className="w-full lg:w-auto text-xl px-8">
             More About Us
           </Button>
         </div>

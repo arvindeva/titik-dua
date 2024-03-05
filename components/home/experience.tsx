@@ -44,10 +44,10 @@ function ExperienceCard() {
             </p>
           </div>
           <div className="buttons flex flex-row gap-x-3">
-            <Button className="w-1/2 h-9 font-normal text-base border-td-black">
+            <Button className="w-1/2 h-9 text-base border-td-black">
               Register
             </Button>
-            <Button className="w-1/2 h-9 font-normal text-base bg-transparent border border-td-black text-td-black focus:bg-td-white">
+            <Button className="w-1/2 h-9 text-base bg-transparent border-2 border-td-black text-td-black focus:bg-td-white">
               Details
             </Button>
           </div>

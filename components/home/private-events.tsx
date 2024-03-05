@@ -50,8 +50,8 @@ export default function PrivateEvents() {
           weddings.
         </p>
         <div className="w-full flex flex-row gap-x-3">
-          <Button className="w-1/2 text-xl font-normal">Contact us</Button>
-          <Button className="w-1/2 bg-td-white text-td-black border border-td-black text-xl font-normal focus:bg-td-beige">
+          <Button className="w-1/2 text-xl">Contact us</Button>
+          <Button className="w-1/2 bg-td-white text-td-black border-2 border-td-black text-xl focus:bg-td-beige">
             Read more
           </Button>
         </div>

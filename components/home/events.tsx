@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { Card, CardContent } from '@/components/ui/card';
 import Image from 'next/image';
 import { Button } from '../ui/button';
+import { LuMapPin, LuClock } from 'react-icons/lu';
 
 function EventCard() {
   return (
@@ -26,12 +27,22 @@ function EventCard() {
             Exhibition by Setia Cap Cili. From 1 february - 21 february. Opening
             night:
           </p>
-          <div className="mb-4 text-sm">
-            <p>Art gallery</p>
-            <p>17:00 PM - 22:00 PM</p>
+          <div className="text-sm flex flex-col gap-y-1 mb-6">
+            <p className="flex flex-row items-center gap-x-1">
+              <span>
+                <LuMapPin />
+              </span>
+              <span>Art Gallery</span>
+            </p>
+            <p className="flex flex-row items-center gap-x-1">
+              <span>
+                <LuClock />
+              </span>
+              <span>17:00 PM - 22:00 PM</span>
+            </p>
           </div>
           <div className="buttons flex flex-row gap-x-2">
-            <Button className="w-full h-9 font-normal text-base bg-transparent border border-td-white">
+            <Button className="w-full h-9 text-base bg-transparent border-2 border-td-white">
               Details
             </Button>
           </div>

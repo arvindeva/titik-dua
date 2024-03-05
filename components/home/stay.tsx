@@ -28,10 +28,8 @@ function RoomCard() {
             room.
           </p>
           <div className="buttons flex flex-row gap-x-2">
-            <Button className="w-1/2 h-9 font-normal text-base">
-              Book Now
-            </Button>
-            <Button className="w-1/2 h-9 font-medium text-base bg-transparent text-td-black border-[1.32px] border-td-black focus:bg-td-white">
+            <Button className="w-1/2 h-9 text-base">Book Now</Button>
+            <Button className="w-1/2 h-9 text-base bg-transparent text-td-black border-[2px] border-td-black focus:bg-td-white">
               Details
             </Button>
           </div>
