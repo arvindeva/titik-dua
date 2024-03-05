@@ -43,7 +43,7 @@ function EventCard() {
 
 export default function Events() {
   return (
-    <section className="bg-td-black text-td-white w-full py-5 overflow-visible">
+    <section className="bg-td-black text-td-white w-full py-10 overflow-visible">
       <div className="px-4 max-w-content mx-auto lg:px-12">
         <h1
           className={cn(

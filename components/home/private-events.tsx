@@ -12,7 +12,7 @@ import { Button } from '../ui/button';
 
 export default function PrivateEvents() {
   return (
-    <section className="pb-24">
+    <section className="">
       <div>
         <Carousel
           className="w-full"

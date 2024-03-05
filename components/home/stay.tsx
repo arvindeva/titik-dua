@@ -55,7 +55,7 @@ export default function Stay() {
         </h1>
       </div>
 
-      <div className="lg:hidden flex overflow-x-scroll pb-10 hide-scroll-bar">
+      <div className="lg:hidden flex overflow-x-scroll pb-4 hide-scroll-bar">
         <div className="flex flex-nowrap px-4 overflow-x-visible gap-x-4">
           <RoomCard />
           <RoomCard />
