@@ -52,7 +52,7 @@ export default function Hero() {
   return (
     <div className="relative">
       <div className=" bg-td-black relative flex items-center justify-center  h-[calc(100vh-80px)]  lg:h-screen lg:max-h-[769px] overflow-hidden">
-        {/* <video
+        <video
           autoPlay
           loop
           muted
@@ -60,7 +60,7 @@ export default function Hero() {
         >
           <source src="/videos/td-hero-mobile.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video> */}
+        </video>
         {/* <video
           autoPlay
           loop
