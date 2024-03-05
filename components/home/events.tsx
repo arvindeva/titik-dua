@@ -47,7 +47,7 @@ export default function Events() {
       <div className="px-4 max-w-content mx-auto lg:px-12">
         <h1
           className={cn(
-            'text-[40px] font-bold tracking-wide lg:text-[64px] mb-4',
+            'text-[40px] font-bold tracking-wide lg:text-[64px] mb-10',
             kobe.className
           )}
         >
@@ -60,7 +60,7 @@ export default function Events() {
         </p>
       </div>
 
-      <div className="lg:hidden flex overflow-x-scroll pb-10 hide-scroll-bar">
+      <div className="lg:hidden flex overflow-x-scroll pb-4 hide-scroll-bar">
         <div className="flex flex-nowrap px-4 overflow-x-visible gap-x-4">
           <EventCard />
           <EventCard />

@@ -1,8 +1,7 @@
 export default function LogoFull() {
   return (
     <svg
-      width="169"
-      height="32"
+      width="126"
       viewBox="0 0 169 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

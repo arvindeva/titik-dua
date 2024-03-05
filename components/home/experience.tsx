@@ -67,16 +67,21 @@ export default function Experience() {
             kobe.className
           )}
         >
-          featured events
+          experience
         </h1>
-        <p className="mb-10 text-sm leading-tight font-regular">
-          Experience emerging and established Indonesian creatives and artists
-          through our monthly curation of exhibitions, talks, workshops and
-          more.
+        <p className="mb-10 text-sm leading-tight font-normal">
+          We&apos;re located in Peliatan Village, a stones throw from Ubud. Few
+          will argue about Ubud&apos;s lure. As the epicenter of Bali&apos;s
+          rich culture where art, tradition, and spirituality blend and converge
+          in a beautiful harmony. Built on a solid foundation of local creative
+          artistry, Ubud remains a mecca for Balinese artists and international
+          entrepreneurs; in recent decades, Ubud has evolved into one of the
+          world&apos;s top destinations for yoga, health & wellness, and
+          innovative dining.
         </p>
       </div>
 
-      <div className="lg:hidden flex overflow-x-scroll pb-10 hide-scroll-bar">
+      <div className="lg:hidden flex overflow-x-scroll hide-scroll-bar">
         <div className="flex flex-nowrap px-4 overflow-x-visible gap-x-4">
           <ExperienceCard />
           <ExperienceCard />

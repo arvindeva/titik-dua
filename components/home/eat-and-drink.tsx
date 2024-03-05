@@ -40,11 +40,11 @@ function EatAndDrinkCard() {
 
 export default function EatAndDrink() {
   return (
-    <section className="bg-td-beige text-td-black w-full py-5 overflow-visible">
+    <section className="bg-td-beige text-td-black w-full py-10 overflow-visible">
       <div className="px-4 max-w-content mx-auto lg:px-12">
         <h1
           className={cn(
-            'text-[40px] font-bold tracking-wide lg:text-[64px] mb-4',
+            'text-[40px] font-bold tracking-wide lg:text-[64px] mb-10',
             kobe.className
           )}
         >
@@ -60,7 +60,7 @@ export default function EatAndDrink() {
         </p>
       </div>
 
-      <div className="lg:hidden flex overflow-x-scroll pb-10 hide-scroll-bar">
+      <div className="lg:hidden flex overflow-x-scroll hide-scroll-bar">
         <div className="flex flex-nowrap px-4 overflow-x-visible gap-x-4">
           <EatAndDrinkCard />
           <EatAndDrinkCard />

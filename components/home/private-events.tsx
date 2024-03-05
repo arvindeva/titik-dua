@@ -25,11 +25,11 @@ export default function PrivateEvents() {
               <CarouselItem key={index}>
                 <div className="w-full h-[281px] bg-gray-600">
                   <Image
-                    className="object-cover"
+                    className="object-cover w-full h-full"
                     src="/images/private-events/private-events-1.jpg"
                     alt="private events one"
                     width={400}
-                    height={281}
+                    height={400}
                   />
                 </div>
               </CarouselItem>
@@ -44,7 +44,7 @@ export default function PrivateEvents() {
         <h1 className={cn('font-bold text-[40px] mb-8', kobe.className)}>
           private events
         </h1>
-        <p className="text-sm mb-12">
+        <p className="text-sm mb-10">
           Titik Dua offers 6 multi-purpose spaces, an open-air amphitheater, to
           accommodate corporate events, wellness retreats, and intimate
           weddings.
