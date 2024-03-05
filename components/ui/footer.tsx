@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="w-[126px]">
         <LogoFull />
       </div>
-      <p className="text-sm">
+      <p className="text-sm leading-tight font-normal">
         Jl. Cok Rai Pudak No. 48, Peliatan, Kecamatan Ubud, Kabupaten Gianyar,
         Bali 80571, Indonesia
       </p>
@@ -45,7 +45,7 @@ export default function Footer() {
           </Link>
         </li>
       </ul>
-      <p className="text-sm">
+      <p className="text-sm leading-tight font-normal">
         &copy; 2024 Titik Dua. PT Titik Titik Terang. All Rights Reserved.
       </p>
       <p className="text-sm">Privacy policy</p>

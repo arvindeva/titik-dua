@@ -28,7 +28,7 @@ function EatAndDrinkCard() {
           </p>
 
           <div className="buttons flex flex-row gap-x-2">
-            <Button className="w-full h-9 font-normal text-base bg-transparent border border-td-black text-td-black">
+            <Button className="w-full h-9 font-normal text-base bg-transparent border border-td-black text-td-black focus:bg-td-white">
               Explore
             </Button>
           </div>

@@ -47,7 +47,7 @@ function ExperienceCard() {
             <Button className="w-1/2 h-9 font-normal text-base border-td-black">
               Register
             </Button>
-            <Button className="w-1/2 h-9 font-normal text-base bg-transparent border border-td-black text-td-black">
+            <Button className="w-1/2 h-9 font-normal text-base bg-transparent border border-td-black text-td-black focus:bg-td-white">
               Details
             </Button>
           </div>

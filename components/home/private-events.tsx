@@ -44,14 +44,14 @@ export default function PrivateEvents() {
         <h1 className={cn('font-bold text-[40px] mb-8', kobe.className)}>
           private events
         </h1>
-        <p className="text-sm mb-10">
+        <p className="text-sm mb-10 leading-tight font-normal">
           Titik Dua offers 6 multi-purpose spaces, an open-air amphitheater, to
           accommodate corporate events, wellness retreats, and intimate
           weddings.
         </p>
         <div className="w-full flex flex-row gap-x-3">
           <Button className="w-1/2 text-xl font-normal">Contact us</Button>
-          <Button className="w-1/2 bg-td-white text-td-black border border-td-black text-xl font-normal">
+          <Button className="w-1/2 bg-td-white text-td-black border border-td-black text-xl font-normal focus:bg-td-beige">
             Read more
           </Button>
         </div>
