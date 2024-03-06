@@ -26,6 +26,7 @@ const config = {
         "td-white": "#FFFFFF",
         "td-beige": "#F5F3EB",
         "td-daun": "#457D4A",
+        "td-bata": "#AA593A",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
