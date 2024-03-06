@@ -1,9 +1,9 @@
-"use client";
-import { kobe } from "@/app/fonts/fonts";
-import { cn } from "@/lib/utils";
-import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image";
-import { Button } from "../ui/button";
+'use client';
+import { kobe } from '@/app/fonts/fonts';
+import { cn } from '@/lib/utils';
+import { Card, CardContent } from '@/components/ui/card';
+import Image from 'next/image';
+import { Button } from '../ui/button';
 
 function OfferCard() {
   return (
@@ -21,8 +21,8 @@ function OfferCard() {
         <div className="px-4 py-4">
           <h1
             className={cn(
-              "font-bold text-3xl mb-3 h-16 leading-none line-clamp-2",
-              kobe.className,
+              'font-bold text-3xl mb-3 h-16 leading-none line-clamp-2',
+              kobe.className
             )}
           >
             nyepi at titik dua
@@ -58,8 +58,8 @@ export default function SpecialOffers() {
       <div className="px-4 max-w-content mx-auto lg:px-12">
         <h1
           className={cn(
-            "text-[40px] text-td-white font-bold tracking-wide mb-2 lg:text-[64px]",
-            kobe.className,
+            'text-[40px] text-td-white font-bold mb-2 lg:text-[64px]',
+            kobe.className
           )}
         >
           special offers

@@ -1,10 +1,10 @@
-"use client";
-import { kobe } from "@/app/fonts/fonts";
-import { cn } from "@/lib/utils";
-import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { LuMapPin, LuClock } from "react-icons/lu";
+'use client';
+import { kobe } from '@/app/fonts/fonts';
+import { cn } from '@/lib/utils';
+import { Card, CardContent } from '@/components/ui/card';
+import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import { LuMapPin, LuClock } from 'react-icons/lu';
 
 function ExperienceCard() {
   return (
@@ -23,7 +23,7 @@ function ExperienceCard() {
           </div>
         </div>
         <div className="">
-          <div className={cn("font-semibold text-3xl mb-3", kobe.className)}>
+          <div className={cn('font-semibold text-3xl mb-3', kobe.className)}>
             morning yoga
           </div>
           <p className="text-td-black text-sm leading-[1.1] leading line-clamp-3 mb-6">
@@ -63,8 +63,8 @@ export default function Experience() {
       <div className="px-4 max-w-content mx-auto lg:px-12">
         <h1
           className={cn(
-            "text-[40px] font-bold tracking-wide lg:text-[64px] mb-8 leading-none",
-            kobe.className,
+            'text-[40px] font-bold lg:text-[64px] mb-8 leading-none',
+            kobe.className
           )}
         >
           experience

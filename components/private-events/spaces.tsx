@@ -1,20 +1,23 @@
-import { kobe } from '@/app/fonts/fonts';
-import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
+import { kobe } from "@/app/fonts/fonts";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import SpacesCards from "./spaces-cards";
 
 export default function Spaces() {
   return (
-    <section className="py-10 px-4">
-      <p className="text-xs text-zinc-500 uppercase mb-4">spaces</p>
-      <h1
-        className={cn(
-          'font-bold text-[40px] mb-8 lowercase leading-8',
-          kobe.className
-        )}
-      >
-        our space is your space
-      </h1>
-      <div className="text-sm flex flex-col gap-y-4 leading-tight">
+    <section className="py-10">
+      <div className="px-4">
+        <p className="text-xs text-zinc-500 uppercase mb-4">spaces</p>
+        <h1
+          className={cn(
+            "font-bold text-[40px] mb-8 lowercase leading-8",
+            kobe.className,
+          )}
+        >
+          our space is your space
+        </h1>
+      </div>
+      <div className="text-sm flex flex-col gap-y-4 leading-tight px-4">
         <p className="">
           Welcome to Titik Dua – a creative playground that embodies the world
           we want to live in, create, and dream in.
@@ -57,7 +60,7 @@ export default function Spaces() {
           booking process seamless and convenient.
         </p>
       </div>
-      <div className="pt-10 flex flex-col gap-y-10">
+      <div className="pt-10 flex flex-col gap-y-10 px-4">
         <h2 className="font-medium text-xl">
           Tell us what you&apos;re planning here and our dedicated team will
           help bring your event to life.
@@ -66,6 +69,7 @@ export default function Spaces() {
           Get in touch
         </Button>
       </div>
+      <SpacesCards />
     </section>
   );
 }

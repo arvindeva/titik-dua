@@ -1,8 +1,9 @@
-import { cn } from '@/lib/utils';
-import { kobe } from '../fonts/fonts';
-import { Button } from '@/components/ui/button';
-import ImageGrid from '@/components/private-events/image-grid';
-import Spaces from '@/components/private-events/spaces';
+import { cn } from "@/lib/utils";
+import { kobe } from "../fonts/fonts";
+import { Button } from "@/components/ui/button";
+import ImageGrid from "@/components/private-events/image-grid";
+import Spaces from "@/components/private-events/spaces";
+import Wedding from "@/components/private-events/wedding";
 
 export default function PrivateEventsPage() {
   return (
@@ -10,8 +11,8 @@ export default function PrivateEventsPage() {
       <section className="bg-td-beige px-4 py-10 mx-auto">
         <h1
           className={cn(
-            'text-[56px] leading-[46px] mb-4 font-semibold',
-            kobe.className
+            "text-[56px] leading-[46px] mb-4 font-semibold",
+            kobe.className,
           )}
         >
           our space for your creativity
@@ -27,6 +28,7 @@ export default function PrivateEventsPage() {
         <ImageGrid />
       </section>
       <Spaces />
+      <Wedding />
     </main>
   );
 }

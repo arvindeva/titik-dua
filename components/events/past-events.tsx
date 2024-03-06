@@ -1,10 +1,10 @@
-"use client";
-import { kobe } from "@/app/fonts/fonts";
-import { cn } from "@/lib/utils";
-import { Card } from "@/components/ui/card";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { LuMapPin, LuClock } from "react-icons/lu";
+'use client';
+import { kobe } from '@/app/fonts/fonts';
+import { cn } from '@/lib/utils';
+import { Card } from '@/components/ui/card';
+import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import { LuMapPin, LuClock } from 'react-icons/lu';
 
 function EventCard() {
   return (
@@ -23,13 +23,13 @@ function EventCard() {
           </div>
         </div>
         <div className="">
-          <div className={cn("font-semibold text-3xl mb-3", kobe.className)}>
+          <div className={cn('font-semibold text-3xl mb-3', kobe.className)}>
             unconditional love
           </div>
           <p className="text-td-white text-sm leading-[1.1] leading line-clamp-4 h-20 mb-2">
             Unconditional Love, the selfless act of loving someone with full
             acceptance and without expecting anything in return. Exhibition by
-            Ni Wayan Sutariyani 
+            Ni Wayan Sutariyani
           </p>
           <div className="text-sm flex flex-col gap-y-1 mb-6">
             <p className="flex flex-row items-center gap-x-1">
@@ -62,8 +62,8 @@ export default function PastEvents() {
       <div className="px-4 max-w-content mx-auto lg:px-12">
         <h1
           className={cn(
-            "text-[40px] font-bold tracking-wide lg:text-[64px] mb-8 leading-none",
-            kobe.className,
+            'text-[40px] font-bold lg:text-[64px] mb-8 leading-none',
+            kobe.className
           )}
         >
           past events

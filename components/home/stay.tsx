@@ -45,7 +45,7 @@ export default function Stay() {
       <div className="px-4 max-w-content mx-auto lg:px-12">
         <h1
           className={cn(
-            'text-[40px] font-bold tracking-wide mb-2 lg:text-[64px]',
+            'text-[40px] font-bold mb-2 lg:text-[64px]',
             kobe.className
           )}
         >
