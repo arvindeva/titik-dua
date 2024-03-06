@@ -42,7 +42,7 @@ export default function LearningExperience() {
       <div className="py-10 px-4">
         <p className="text-xs text-zinc-500 uppercase">workshops</p>
         <h1
-          className={cn("font-bold text-[40px] mb-8 lowercase", kobe.className)}
+          className={cn("font-bold text-[40px] mb-4 lowercase", kobe.className)}
         >
           learning experience
         </h1>
