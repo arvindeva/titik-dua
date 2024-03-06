@@ -36,7 +36,7 @@ export function ContactForm() {
     console.log(values);
     console.log("asd");
     alert(
-      `submitting the following \nname: ${values.name} \nemail: ${values.email} \nmessage: ${values.message}`,
+      `submitting the following \nname: ${values.name} \nemail: ${values.email} \nmessage: ${values.message}`
     );
   }
   return (
@@ -50,7 +50,7 @@ export function ContactForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Name</FormLabel>
+              <FormLabel className="font-medium">Name</FormLabel>
               <FormControl>
                 <Input placeholder="Ario" {...field} />
               </FormControl>
@@ -64,7 +64,7 @@ export function ContactForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel className="font-medium">Email</FormLabel>
               <FormControl>
                 <Input placeholder="ario@titikdua.id" {...field} />
               </FormControl>
@@ -78,7 +78,7 @@ export function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel className="font-medium">Message</FormLabel>
               <FormControl>
                 <div className="">
                   <Textarea
