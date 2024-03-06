@@ -1,6 +1,6 @@
-import { Button } from '../ui/button';
-import { kobe } from '@/app/fonts/fonts';
-import { cn } from '@/lib/utils';
+import { Button } from "../ui/button";
+import { kobe } from "@/app/fonts/fonts";
+import { cn } from "@/lib/utils";
 
 export default function Welcome() {
   return (
@@ -8,8 +8,8 @@ export default function Welcome() {
       <div className="flex flex-col lg:flex-row gap-y-10 px-4 py-10 lg:px-12 lg:py-32 max-w-content mx-auto">
         <div
           className={cn(
-            'lg:w-1/2 font-bold text-[52px] lg:text-[80px] lg:tracking-normal leading-[0.8]',
-            kobe.className
+            "lg:w-1/2 font-bold text-[52px] lg:text-[80px] lg:tracking-normal leading-[0.8]",
+            kobe.className,
           )}
         >
           welcome to tanah titik dua
@@ -22,7 +22,7 @@ export default function Welcome() {
             contemporary take on design, gastronomy, and immersive workshops and
             talks on culture, innovation, and wellness
           </p>
-          <Button className="w-full lg:w-auto text-xl px-8">
+          <Button className="w-full lg:w-auto" variant="black">
             More About Us
           </Button>
         </div>

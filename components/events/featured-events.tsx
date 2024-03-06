@@ -19,7 +19,7 @@ function EventCard() {
             height="300"
           />
           <div className="absolute bottom-2 left-2 bg-td-beige font-medium text-td-black text-base px-2.5 py-1 rounded-full">
-            Art
+            Culture
           </div>
         </div>
         <div className="">

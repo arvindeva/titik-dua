@@ -1,6 +1,12 @@
 import { cn } from "@/lib/utils";
 import { kobe } from "../fonts/fonts";
 import ImageGrid from "@/components/about/image-grid";
+import StayExperience from "@/components/about/stay-experience";
+import CTAMobile from "@/components/ui/cta-mobile";
+import Neighbourhood from "@/components/about/neighbourhood";
+import LearningExperience from "@/components/about/learning-experience";
+import DiscoverSpaces from "@/components/about/discover-spaces";
+import Stay from "@/components/about/stay";
 
 export default function AboutPage() {
   return (
@@ -21,6 +27,12 @@ export default function AboutPage() {
         </p>
       </section>
       <ImageGrid />
+      <StayExperience />
+      <Neighbourhood />
+      <LearningExperience />
+      <DiscoverSpaces />
+      <Stay />
+      <CTAMobile />
     </main>
   );
 }

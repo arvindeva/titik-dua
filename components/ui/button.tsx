@@ -20,6 +20,8 @@ const buttonVariants = cva(
         icon: "rounded-full bg-none hover:bg-primary",
         clear:
           "bg-transparent text-td-black border-2 border-td-black text-xl active:bg-td-black active:text-td-white focus:text-td-black focus:bg-transparent",
+        black:
+          "text-xl font-medium text-td-white bg-td-black active:bg-td-white active:border-2 active:border-td-black active:text-td-black",
       },
       size: {
         default: "h-[52px] rounded-full px-4",
