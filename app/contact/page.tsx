@@ -1,5 +1,7 @@
 import { cn } from "@/lib/utils";
 import { kobe } from "../fonts/fonts";
+import CTAMobile from "@/components/ui/cta-mobile";
+import { ContactForm } from "@/components/contact/contact-form";
 
 export default function ContactPage() {
   return (
@@ -17,6 +19,10 @@ export default function ContactPage() {
           you&apos;d like to share.
         </p>
       </section>
+      <section>
+        <ContactForm />
+      </section>
+      <CTAMobile />
     </main>
   );
 }
