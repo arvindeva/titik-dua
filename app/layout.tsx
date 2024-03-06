@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "@/components/ui/navbar";
 import { workSans } from "@/app/fonts/fonts";
+import Footer from "@/components/ui/footer";
 
 export const metadata: Metadata = {
   title: "Titik Dua Ubud",
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={workSans.className}>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

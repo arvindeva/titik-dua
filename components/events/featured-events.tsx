@@ -1,15 +1,15 @@
 "use client";
 import { kobe } from "@/app/fonts/fonts";
 import { cn } from "@/lib/utils";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import Image from "next/image";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 import { LuMapPin, LuClock } from "react-icons/lu";
 
 function EventCard() {
   return (
     <div className="">
-      <Card className="w-72 rounded-none border-0 bg-transparent text-td-white">
+      <Card className="w-72 rounded-none border-0 bg-transparent text-td-black">
         <div className="relative h-72 w-full bg-transparent overflow-hidden mb-1">
           <Image
             className="object-cover w-72 h-72"
@@ -26,7 +26,7 @@ function EventCard() {
           <div className={cn("font-semibold text-3xl mb-3", kobe.className)}>
             benang merah
           </div>
-          <p className="text-td-white text-sm leading-[1.1] leading line-clamp-3 h-20 mb-2">
+          <p className="text-sm leading-[1.1] leading line-clamp-3 h-20 mb-2">
             Exhibition by Setia Cap Cili. From 1 february - 21 february. Opening
             night:
           </p>
@@ -45,7 +45,7 @@ function EventCard() {
             </p>
           </div>
           <div className="buttons flex flex-row gap-x-2">
-            <Button className="w-full h-9 text-base bg-transparent border-2 border-td-white">
+            <Button className="w-full h-9 text-base" variant="clear">
               Details
             </Button>
           </div>
@@ -55,9 +55,9 @@ function EventCard() {
   );
 }
 
-export default function Events() {
+export default function FeaturedEvents() {
   return (
-    <section className="bg-td-black text-td-white w-full pt-10 pb-10 overflow-visible">
+    <section className="bg-td-white text-td-black w-full pt-10 pb-10 overflow-visible">
       <div className="px-4 max-w-content mx-auto lg:px-12">
         <h1
           className={cn(

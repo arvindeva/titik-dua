@@ -19,7 +19,6 @@ export default function Home() {
       <EatAndDrink />
       <PrivateEvents />
       <Experience />
-      <Footer />
     </main>
   );
 }

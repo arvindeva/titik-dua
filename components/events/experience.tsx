@@ -1,9 +1,9 @@
 "use client";
 import { kobe } from "@/app/fonts/fonts";
 import { cn } from "@/lib/utils";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 import { LuMapPin, LuClock } from "react-icons/lu";
 
 function ExperienceCard() {

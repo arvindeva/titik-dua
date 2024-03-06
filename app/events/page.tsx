@@ -1,12 +1,23 @@
 import { cn } from "@/lib/utils";
 import { kobe } from "../fonts/fonts";
 
+import FeaturedEvents from "@/components/events/featured-events";
+import PastEvents from "@/components/events/past-events";
+import Experience from "@/components/events/experience";
+
 export default function EventsPage() {
   return (
-    <main className="bg-td-beige h-[calc(100vh-80px)] px-4 pt-24 mx-auto text-center">
-      <h1 className={cn("font-black text-4xl", kobe.className)}>
-        under construction
-      </h1>
+    <main className="bg-td-white">
+      <div className="px-4 py-10 bg-td-beige">
+        <h1
+          className={cn("font-bold text-[56px] leading-none", kobe.className)}
+        >
+          what&apos;s on
+        </h1>
+      </div>
+      <FeaturedEvents />
+      <PastEvents />
+      <Experience />
     </main>
   );
 }

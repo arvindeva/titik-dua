@@ -135,7 +135,6 @@ export default function StayPage() {
         ))}
       </section>
       <SpecialOffers />
-      <Footer />
     </main>
   );
 }

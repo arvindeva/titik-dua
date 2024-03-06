@@ -1,9 +1,9 @@
 "use client";
 import { kobe } from "@/app/fonts/fonts";
 import { cn } from "@/lib/utils";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import Image from "next/image";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 import { LuMapPin, LuClock } from "react-icons/lu";
 
 function EventCard() {
@@ -19,16 +19,17 @@ function EventCard() {
             height="300"
           />
           <div className="absolute bottom-2 left-2 bg-td-beige font-medium text-td-black text-base px-2.5 py-1 rounded-full">
-            Art
+            Culture
           </div>
         </div>
         <div className="">
           <div className={cn("font-semibold text-3xl mb-3", kobe.className)}>
-            benang merah
+            unconditional love
           </div>
-          <p className="text-td-white text-sm leading-[1.1] leading line-clamp-3 h-20 mb-2">
-            Exhibition by Setia Cap Cili. From 1 february - 21 february. Opening
-            night:
+          <p className="text-td-white text-sm leading-[1.1] leading line-clamp-4 h-20 mb-2">
+            Unconditional Love, the selfless act of loving someone with full
+            acceptance and without expecting anything in return. Exhibition by
+            Ni Wayan Sutariyani 
           </p>
           <div className="text-sm flex flex-col gap-y-1 mb-6">
             <p className="flex flex-row items-center gap-x-1">
@@ -55,7 +56,7 @@ function EventCard() {
   );
 }
 
-export default function Events() {
+export default function PastEvents() {
   return (
     <section className="bg-td-black text-td-white w-full pt-10 pb-10 overflow-visible">
       <div className="px-4 max-w-content mx-auto lg:px-12">
@@ -65,7 +66,7 @@ export default function Events() {
             kobe.className,
           )}
         >
-          featured events
+          past events
         </h1>
         <p className="mb-10 text-sm leading-tight font-regular">
           Experience emerging and established Indonesian creatives and artists
