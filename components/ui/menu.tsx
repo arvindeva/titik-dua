@@ -21,6 +21,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import LogoFull from "../logos/logo-full";
 
 export default function menu() {
   return (
@@ -39,11 +40,16 @@ export default function menu() {
       </SheetTrigger>
       <SheetContent side="top" className="h-full p-0 bg-td-beige">
         <SheetHeader>
-          <div className="sm:hidden sticky top-0 z-50 w-full  text-td-black h-[80px] px-4">
+          <div className="sticky lg:px-12 xl:h-[101px] top-0 z-50 w-full  text-td-black h-[80px] px-4">
             <div className="mx-auto max-w-[1400px] flex flex-row items-center h-full justify-between w-full">
               <Link className="h-7" href="/">
                 <SheetClose>
-                  <LogoMobile color="black" />
+                  <div className="lg:hidden">
+                    <LogoMobile color="black" />
+                  </div>
+                  <div className="hidden lg:block">
+                    <LogoFull color="black" />
+                  </div>
                 </SheetClose>
               </Link>
               <SheetClose className="bg-transparent transform -translate-x-1.5">
@@ -107,7 +113,7 @@ export default function menu() {
                       restaurants & bars
                     </AccordionTrigger>
                     <AccordionContent>
-                      <ul className="flex flex-col gap-y-3 pt-3">
+                      <ul className="flex flex-col text-center gap-y-3 pt-3">
                         <li>
                           <Link href="/ramu-kitchen">
                             <SheetClose>ramu kitchen</SheetClose>

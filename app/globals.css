@@ -65,7 +65,7 @@
 }
 .loader::after,
 .loader::before {
-  content: '';
+  content: "";
   box-sizing: border-box;
   position: absolute;
   width: 24px;
@@ -80,6 +80,35 @@
 .loader::before {
   background-color: #fff;
   transform: scale(0.5) translate(-48px, -48px);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-next-button,
+.custom-prev-button {
+  /* Add your styles here */
+  cursor: pointer;
 }
 
 @keyframes rotation {

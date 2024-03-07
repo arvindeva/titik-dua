@@ -11,10 +11,10 @@ import LogoMobile from "../logos/logo-mobile";
 
 function DesktopNavBar() {
   return (
-    <header className="hidden sm:inline-block sticky top-0 z-50 w-full bg-black text-td-white h-[101px]">
-      <div className="mx-auto max-w-[1440px] flex flex-row items-center h-full justify-between w-full px-12">
+    <header className="hidden lg:inline-block sticky top-0 z-50 w-full bg-black text-td-white h-[101px] px-10">
+      <div className="mx-auto max-w-content flex flex-row items-center h-full justify-between w-full">
         <Link href="/">
-          <LogoFull />
+          <LogoFull color="white" />
         </Link>
         <div className="flex flex-row items-center space-x-4">
           <FaWhatsapp size="38" className="mr-2" />
@@ -30,7 +30,7 @@ function DesktopNavBar() {
 
 function MobileNavBar() {
   return (
-    <header className="sm:hidden sticky top-0 z-50 w-full bg-black text-td-white h-[80px] px-4">
+    <header className="lg:hidden sticky top-0 z-50 w-full bg-black text-td-white h-[80px] px-4">
       <div className="mx-auto max-w-[1400px] flex flex-row items-center h-full justify-between w-full">
         <Link className="h-7" href="/">
           <LogoMobile color="white" />

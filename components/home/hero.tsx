@@ -18,7 +18,7 @@ function Label() {
 
 function CheckAvailability() {
   return (
-    <section className="z-10 hidden lg:inline-block  absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-td-beige rounded-3xl px-8 py-4 shadow-xl">
+    <section className="z-10 hidden xl:inline-block  absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-td-beige rounded-3xl px-8 py-4 shadow-xl">
       <div className="flex flex-row gap-x-4 items-center justify-center">
         <p
           className={cn(
@@ -60,7 +60,7 @@ export default function Hero() {
           <source src="/videos/td-hero-mobile.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        {/* <video
+        <video
           autoPlay
           loop
           muted
@@ -68,7 +68,7 @@ export default function Hero() {
         >
           <source src="/videos/td-hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video> */}
+        </video>
       </div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-td-white"></div>
       <CheckAvailability />
