@@ -43,12 +43,12 @@ export default function Deluxe() {
         <h1
           className={cn(
             "font-bold text-[40px] leading-[30px] mb-6",
-            kobe.className,
+            kobe.className
           )}
         >
           titik dua deluxe room
         </h1>
-        <p className="text-sm mb-10 leading-tight font-normal">
+        <p className="text-sm mb-6 leading-tight font-normal">
           Cozy rooms with handcrafted furniture, floor-to-ceiling windows, a
           choice of king-size or twin beds featuring artisanal rugs, runners,
           and curated amenities, celebrating Indonesian craftsmanship. LED Smart
