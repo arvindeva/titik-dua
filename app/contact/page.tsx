@@ -93,7 +93,7 @@ export default function ContactPage() {
         <ContactForm />
       </section>
       <section className="px-4 flex flex-col gap-y-10 pb-10">
-        <Card className="bg-td-black text-td-white rounded-3xl">
+        <Card className="bg-td-black text-td-white rounded-3xl shadow-none border-none">
           <CardHeader>
             <FaWhatsapp size={32} />
             <CardTitle
@@ -115,7 +115,7 @@ export default function ContactPage() {
             </CardFooter>
           </CardHeader>
         </Card>
-        <Card className="bg-td-beige text-td-black rounded-3xl">
+        <Card className="bg-td-beige text-td-black rounded-3xl shadow-none border-none">
           <CardHeader>
             <PinIcon />
             <CardTitle
