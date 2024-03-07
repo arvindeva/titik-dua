@@ -64,7 +64,7 @@ function EventCard() {
 export default function Events() {
   return (
     <section className="bg-td-black text-td-white w-full pt-10 pb-10 overflow-hidden lg:px-12">
-      <div className="mx-auto px-4 lg:px-0 max-w-content">
+      <div className="mx-auto px-4 lg:px-0 max-w-[1400px]">
         <h1
           className={cn(
             "text-[40px] font-bold lg:text-[64px] mb-8 leading-none",
@@ -101,7 +101,7 @@ export default function Events() {
         </div>
       </div>
 
-      <div className="hidden mx-auto lg:block max-w-content">
+      <div className="hidden mx-auto lg:block max-w-[1400px]">
         <Swiper
           slidesPerView={"auto"}
           mousewheel={{

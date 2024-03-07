@@ -66,7 +66,7 @@ function ExperienceCard() {
 export default function Experience() {
   return (
     <section className="bg-td-beige text-td-black w-full py-10 !overflow-hidden lg:px-12">
-      <div className="px-4 max-w-content mx-auto lg:px-0">
+      <div className="px-4 max-w-[1400px] mx-auto lg:px-0">
         <h1
           className={cn(
             "text-[40px] font-bold lg:text-[64px] mb-8 leading-none",
@@ -110,7 +110,7 @@ export default function Experience() {
         </div>
       </div>
 
-      <div className="hidden !max-w-content mx-auto lg:block">
+      <div className="hidden max-w-[1400px] mx-auto lg:block">
         <Swiper
           slidesPerView={"auto"}
           mousewheel={{

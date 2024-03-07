@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 export default function Welcome() {
   return (
     <section className="bg-td-beige w-full">
-      <div className="flex flex-col lg:flex-row gap-y-10 px-4 py-10 lg:px-12 lg:py-16 xl:py-32 lg:gap-x-12 xl:gap-x-16 mx-auto max-w-content">
+      <div className="flex flex-col lg:flex-row gap-y-10 px-4 lg:px-0 py-10 lg:py-16 xl:py-32 lg:gap-x-12 xl:gap-x-16 mx-auto max-w-[1400px]">
         <div
           className={cn(
             "lg:w-1/2 font-bold text-[52px] md:text-[64px] xl:text-[80px] 2xl:text-[96px] lg:tracking-normal leading-[0.8]",

@@ -11,7 +11,7 @@ import LogoMobile from "../logos/logo-mobile";
 
 function DesktopNavBar() {
   return (
-    <header className="hidden lg:inline-block sticky top-0 z-50 w-full bg-black text-td-white h-[101px] px-10">
+    <header className="hidden lg:inline-block sticky top-0 z-50 w-full bg-black text-td-white h-[101px] px-12">
       <div className="mx-auto max-w-content flex flex-row items-center h-full justify-between w-full">
         <Link href="/">
           <LogoFull color="white" />

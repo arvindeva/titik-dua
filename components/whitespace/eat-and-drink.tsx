@@ -46,7 +46,7 @@ function EatAndDrinkCard() {
 export default function EatAndDrink() {
   return (
     <section className="bg-td-beige text-td-black w-full py-10 overflow-visible lg:px-12">
-      <div className="px-4 lg:px-0 max-w-content mx-auto">
+      <div className="px-4 lg:px-0 max-w-[1400px] mx-auto">
         <h1
           className={cn(
             "text-[40px] font-bold lg:text-[64px] mb-8 leading-none",
@@ -65,7 +65,7 @@ export default function EatAndDrink() {
         </p>
       </div>
 
-      <div className="flex overflow-x-scroll max-w-content mx-auto hide-scroll-bar">
+      <div className="flex overflow-x-scroll max-w-[1400px] mx-auto hide-scroll-bar">
         <div className="px-4 lg:px-0 flex flex-nowrap overflow-x-visible gap-x-4">
           <EatAndDrinkCard />
           <EatAndDrinkCard />

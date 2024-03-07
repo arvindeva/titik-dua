@@ -1,10 +1,10 @@
-'use client';
-import { kobe } from '@/app/fonts/fonts';
-import { cn } from '@/lib/utils';
-import { Card } from '@/components/ui/card';
-import Image from 'next/image';
-import { Button } from '@/components/ui/button';
-import { LuMapPin, LuClock } from 'react-icons/lu';
+"use client";
+import { kobe } from "@/app/fonts/fonts";
+import { cn } from "@/lib/utils";
+import { Card } from "@/components/ui/card";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { LuMapPin, LuClock } from "react-icons/lu";
 
 function EventCard() {
   return (
@@ -23,7 +23,7 @@ function EventCard() {
           </div>
         </div>
         <div className="">
-          <div className={cn('font-semibold text-3xl mb-3', kobe.className)}>
+          <div className={cn("font-semibold text-3xl mb-3", kobe.className)}>
             benang merah
           </div>
           <p className="text-sm leading-[1.1] leading line-clamp-3 h-20 mb-2">
@@ -61,8 +61,8 @@ export default function FeaturedEvents() {
       <div className="px-4 max-w-content mx-auto lg:px-12">
         <h1
           className={cn(
-            'text-[40px] font-bold lg:text-[64px] mb-8 leading-none',
-            kobe.className
+            "text-[40px] font-bold lg:text-[64px] mb-8 leading-none",
+            kobe.className,
           )}
         >
           featured events

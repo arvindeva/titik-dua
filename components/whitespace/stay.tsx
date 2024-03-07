@@ -51,11 +51,11 @@ function RoomCard() {
 
 export default function Stay() {
   return (
-    <section className="bg-white w-full py-12 !overflow-hidden lg:px-12">
-      <div className="mx-auto px-4 lg:px-0 max-w-content">
+    <section className="bg-white w-full py-5 !overflow-hidden lg:px-12">
+      <div className="mx-auto px-4 lg:px-0 max-w-[1400px]">
         <h1
           className={cn(
-            "text-[40px] font-bold leading-none mb-2 lg:text-[64px]",
+            "text-[40px] font-bold mb-2 lg:text-[64px]",
             kobe.className,
           )}
         >
@@ -72,7 +72,7 @@ export default function Stay() {
         </div>
       </div>
 
-      <div className="hidden mx-auto lg:block max-w-content">
+      <div className="hidden mx-auto lg:block max-w-[1400px]">
         <div className="w-full text-end flex flex-row items-center justify-end gap-x-2 mb-8">
           <Button
             className="home-stay-prev-button text-td-white bg-td-black h-[44px] w-[44px] p-0 active:bg-zinc-500"

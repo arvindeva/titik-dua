@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       spacing: {
-        content: "1440px",
+        content: "2000px",
       },
       colors: {
         "td-black": "#181E1B",

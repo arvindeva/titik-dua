@@ -13,7 +13,7 @@ import { Button } from "../ui/button";
 export default function PrivateEvents() {
   return (
     <section className="lg:px-12">
-      <div className="flex flex-col lg:flex-row max-w-content mx-auto">
+      <div className="flex flex-col lg:flex-row max-w-[1400px] mx-auto">
         <div className="lg:w-1/2 lg:py-20 relative">
           <Carousel
             className="w-full relative"
