@@ -1,9 +1,8 @@
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { kobe } from '../../app/fonts/fonts';
-import { cn } from '@/lib/utils';
-import * as React from 'react';
-import { Suspense } from 'react';
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { kobe } from "../../app/fonts/fonts";
+import { cn } from "@/lib/utils";
+import * as React from "react";
 
 function Label() {
   return (
@@ -23,8 +22,8 @@ function CheckAvailability() {
       <div className="flex flex-row gap-x-4 items-center justify-center">
         <p
           className={cn(
-            'text-nowrap font-semibold text-[28px] mr-4',
-            kobe.className
+            "text-nowrap font-semibold text-[28px] mr-4",
+            kobe.className,
           )}
         >
           book your stay

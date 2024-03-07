@@ -15,6 +15,12 @@ import LogoMobile from "../logos/logo-mobile";
 import { cn } from "@/lib/utils";
 import { kobe } from "@/app/fonts/fonts";
 import { FaInstagram, FaFacebook, FaSpotify } from "react-icons/fa";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function menu() {
   return (
@@ -70,8 +76,8 @@ export default function menu() {
           <div>
             <ul
               className={cn(
-                "flex flex-col space-y-0 text-[32px] font-bold mt-8",
-                kobe.className
+                "flex flex-col space-y-3 text-[32px] font-bold mt-8 leading-none",
+                kobe.className,
               )}
             >
               <li>
@@ -95,9 +101,37 @@ export default function menu() {
                 </Link>
               </li>
               <li>
-                <Link href="/foods-and-drinks">
-                  <SheetClose>restaurants & bars +</SheetClose>
-                </Link>
+                <Accordion type="single" collapsible>
+                  <AccordionItem value="item-1">
+                    <AccordionTrigger className="font-bold no-underline hover:no-underline">
+                      restaurants & bars
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <ul className="flex flex-col gap-y-3 pt-3">
+                        <li>
+                          <Link href="/ramu-kitchen">
+                            <SheetClose>ramu kitchen</SheetClose>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/rooftop-bar">
+                            <SheetClose>rooftop bar</SheetClose>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/pool-bar">
+                            <SheetClose>pool bar</SheetClose>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/coca-bar">
+                            <SheetClose>coca bar</SheetClose>
+                          </Link>
+                        </li>
+                      </ul>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
               </li>
               <li>
                 <Link href="/contact">
