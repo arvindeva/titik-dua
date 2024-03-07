@@ -23,7 +23,7 @@ function RoomCard() {
             height="400"
           />
         </div>
-        <div className="p-6 text-start">
+        <div className="p-4 lg:p-6 text-start">
           <div
             className={cn(
               "font-bold text-3xl mb-3 lg:text-[48px]",
@@ -38,8 +38,10 @@ function RoomCard() {
             room.
           </p>
           <div className="buttons flex flex-row gap-x-2">
-            <Button className="w-1/2 h-9 text-base">Book Now</Button>
-            <Button className="w-1/2 h-9 text-base bg-transparent text-td-black border-[2px] border-td-black focus:bg-td-white">
+            <Button className="w-1/2 h-9 text-base lg:h-[47px] lg:text-xl">
+              Book Now
+            </Button>
+            <Button className="w-1/2 h-9 lg:h-[47px] text-base lg:text-xl bg-transparent text-td-black border-[2px] border-td-black focus:bg-td-white">
               Details
             </Button>
           </div>
@@ -51,11 +53,11 @@ function RoomCard() {
 
 export default function Stay() {
   return (
-    <section className="bg-white w-full py-12 !overflow-hidden lg:px-12">
+    <section className="bg-white w-full py-5 lg:py-12 !overflow-hidden lg:px-12">
       <div className="mx-auto px-4 lg:px-0 max-w-content">
         <h1
           className={cn(
-            "text-[40px] font-bold leading-none mb-2 lg:text-[64px]",
+            "text-[40px] font-bold leading-none mb-4 lg:text-[64px]",
             kobe.className,
           )}
         >
