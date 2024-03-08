@@ -55,14 +55,17 @@ export default function PrivateEvents() {
             lineup of designed-led exhibitions, innovative talks, and workshops.
           </p>
           <div className="w-full lg:w-auto flex flex-row gap-x-3">
-            <Link href="/contact">
-              <Button className="w-1/2 lg:w-[180px] text-xl" variant="primary">
+            <Link href="/contact" className="w-1/2">
+              <Button
+                className=" w-full lg:w-[180px] text-xl"
+                variant="primary"
+              >
                 Contact us
               </Button>
             </Link>
-            <Link href="/private-events">
+            <Link href="/private-events" className="w-1/2">
               <Button
-                className="w-1/2 lg:w-[180px] text-xl"
+                className=" w-full lg:w-[180px] text-xl"
                 variant="transparent"
               >
                 Read more
