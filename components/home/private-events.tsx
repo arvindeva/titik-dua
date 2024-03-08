@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import FadeIn from "../animation/fade-in";
 
 export default function PrivateEvents() {
   return (
@@ -42,18 +43,23 @@ export default function PrivateEvents() {
           </Carousel>
         </div>
         <div className="py-10 lg:py-20 px-4 lg:w-1/2 lg:pl-24">
-          <p className="text-xs text-zinc-500">EVENTS</p>
-          <h1 className={cn("font-bold text-[40px] mb-8", kobe.className)}>
-            private events
-          </h1>
-          <p className="text-sm mb-10 leading-tight font-normal lg:text-base lg:leading-tight">
-            Memorable events are at the heart of Titik Dua. Featuring 6
-            multi-purpose spaces and an open-air amphitheater, offering a
-            diverse venue choice for corporate events, wellness retreats, and
-            intimate weddings. In keeping with our mission of bringing local
-            creative talent to the global stage, Titik Dua presents a regular
-            lineup of designed-led exhibitions, innovative talks, and workshops.
-          </p>
+          <FadeIn from="bottom">
+            <p className="text-xs text-zinc-500">EVENTS</p>
+            <h1 className={cn("font-bold text-[40px] mb-8", kobe.className)}>
+              private events
+            </h1>
+          </FadeIn>
+          <FadeIn from="bottom">
+            <p className="text-sm mb-10 leading-tight font-normal lg:text-base lg:leading-tight">
+              Memorable events are at the heart of Titik Dua. Featuring 6
+              multi-purpose spaces and an open-air amphitheater, offering a
+              diverse venue choice for corporate events, wellness retreats, and
+              intimate weddings. In keeping with our mission of bringing local
+              creative talent to the global stage, Titik Dua presents a regular
+              lineup of designed-led exhibitions, innovative talks, and
+              workshops.
+            </p>
+          </FadeIn>
           <div className="w-full lg:w-auto flex flex-row gap-x-3">
             <Link href="/contact" className="w-1/2">
               <Button

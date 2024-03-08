@@ -120,7 +120,6 @@ export default function StayPage() {
           lush jungle.
         </p>
       </section>
-      <CTAMobile />
       <Deluxe />
       <section>
         <h1 className={cn("font-bold text-[40px] px-4 mb-4", kobe.className)}>

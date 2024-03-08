@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import ImageGrid from "@/components/private-events/image-grid";
 import Spaces from "@/components/private-events/spaces";
 import Wedding from "@/components/private-events/wedding";
-import CTAMobile from "@/components/ui/cta-mobile";
 import Link from "next/link";
 
 export default function PrivateEventsPage() {
@@ -33,7 +32,6 @@ export default function PrivateEventsPage() {
       </section>
       <Spaces />
       <Wedding />
-      <CTAMobile />
     </main>
   );
 }

@@ -1,11 +1,9 @@
 import { cn } from "@/lib/utils";
 import { kobe } from "../fonts/fonts";
-import CTAMobile from "@/components/ui/cta-mobile";
 import { ContactForm } from "@/components/contact/contact-form";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -78,7 +76,7 @@ export default function ContactPage() {
         <h1
           className={cn(
             "font-bold text-[40px] mb-10 leading-none",
-            kobe.className
+            kobe.className,
           )}
         >
           get in touch with us
@@ -99,7 +97,7 @@ export default function ContactPage() {
             <CardTitle
               className={cn(
                 "font-bold text-[40px]  leading-none",
-                kobe.className
+                kobe.className,
               )}
             >
               whatsapp
@@ -121,7 +119,7 @@ export default function ContactPage() {
             <CardTitle
               className={cn(
                 "font-bold text-[40px]  leading-none",
-                kobe.className
+                kobe.className,
               )}
             >
               get directions
@@ -138,7 +136,6 @@ export default function ContactPage() {
           </CardHeader>
         </Card>
       </section>
-      <CTAMobile />
     </main>
   );
 }

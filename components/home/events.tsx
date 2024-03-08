@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 import { FreeMode, Navigation, Mousewheel } from "swiper/modules";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { data } from "@/data";
+import FadeIn from "../animation/fade-in";
 
 interface EventCardProps {
   event: {
@@ -83,66 +84,70 @@ export default function Events() {
   return (
     <section className="bg-td-black text-td-white w-full pt-10 pb-10 lg:pb-16 overflow-hidden lg:px-12">
       <div className="mx-auto px-4 lg:px-0 max-w-content">
-        <h1
-          className={cn(
-            "text-[40px] font-bold lg:text-[64px] mb-8 leading-none",
-            kobe.className,
-          )}
-        >
-          featured events
-        </h1>
-        <div className="lg:flex flex-row items-center justify-between">
-          <p className="mb-10 text-sm lg:text-base lg:leading-tight leading-tight font-regular">
-            Experience emerging and established Indonesian creatives and artists
-            through our monthly curation of exhibitions, talks, workshops and
-            more.
-          </p>
+        <FadeIn from="bottom">
+          <h1
+            className={cn(
+              "text-[40px] font-bold lg:text-[64px] mb-8 leading-none",
+              kobe.className,
+            )}
+          >
+            featured events
+          </h1>
+        </FadeIn>
+        <FadeIn from="bottom">
+          <div className="lg:flex flex-row items-center justify-between">
+            <p className="mb-10 text-sm lg:text-base lg:leading-tight leading-tight font-regular">
+              Experience emerging and established Indonesian creatives and
+              artists through our monthly curation of exhibitions, talks,
+              workshops and more.
+            </p>
 
-          <div className="w-full text-end hidden lg:flex flex-row items-center justify-end gap-x-2 mb-8">
-            <Button className="home-events-prev-button text-td-black bg-td-white h-[44px] w-[44px] p-0 hover:bg-td-white active:bg-zinc-500">
-              <GoArrowLeft size={30} />
-            </Button>
+            <div className="w-full text-end hidden lg:flex flex-row items-center justify-end gap-x-2 mb-8">
+              <Button className="home-events-prev-button text-td-black bg-td-white h-[44px] w-[44px] p-0 hover:bg-td-white active:bg-zinc-500">
+                <GoArrowLeft size={30} />
+              </Button>
+              <Button className="home-events-next-button text-td-black bg-td-white h-[44px] w-[44px] p-0 hover:bg-td-white active:bg-zinc-500">
+                <GoArrowRight size={30} />
+              </Button>
+            </div>
+          </div>
+        </FadeIn>
+      </div>
 
-            <Button className="home-events-next-button text-td-black bg-td-white h-[44px] w-[44px] p-0 hover:bg-td-white active:bg-zinc-500">
-              <GoArrowRight size={30} />
-            </Button>
+      <FadeIn from="right" threshold={0.15}>
+        <div className="lg:hidden flex overflow-x-scroll pb-4 px-4 hide-scroll-bar">
+          <div className="flex flex-nowrap !overflow-x-visible gap-x-4">
+            <EventCard event={data.featuredEvents[0]} />
+            <EventCard event={data.featuredEvents[1]} />
+            <EventCard event={data.featuredEvents[2]} />
+            <EventCard event={data.featuredEvents[3]} />
           </div>
         </div>
-      </div>
-
-      <div className="lg:hidden flex overflow-x-scroll pb-4 px-4 hide-scroll-bar">
-        <div className="flex flex-nowrap !overflow-x-visible gap-x-4">
-          <EventCard event={data.featuredEvents[0]} />
-          <EventCard event={data.featuredEvents[1]} />
-          <EventCard event={data.featuredEvents[2]} />
-          <EventCard event={data.featuredEvents[3]} />
+        <div className="hidden mx-auto lg:block max-w-content">
+          <Swiper
+            slidesPerView={"auto"}
+            mousewheel={{
+              forceToAxis: true,
+            }}
+            spaceBetween={24}
+            navigation={{
+              prevEl: ".home-events-prev-button",
+              nextEl: ".home-events-next-button",
+            }}
+            freeMode={true}
+            modules={[FreeMode, Navigation, Mousewheel]}
+            className="mySwiper !overflow-visible"
+          >
+            {data.featuredEvents.map((event, i) => {
+              return (
+                <SwiperSlide key={event.id} className="max-w-[432px] min-h-48">
+                  <EventCard event={event} />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
-      </div>
-
-      <div className="hidden mx-auto lg:block max-w-content">
-        <Swiper
-          slidesPerView={"auto"}
-          mousewheel={{
-            forceToAxis: true,
-          }}
-          spaceBetween={24}
-          navigation={{
-            prevEl: ".home-events-prev-button",
-            nextEl: ".home-events-next-button",
-          }}
-          freeMode={true}
-          modules={[FreeMode, Navigation, Mousewheel]}
-          className="mySwiper !overflow-visible"
-        >
-          {data.featuredEvents.map((event, i) => {
-            return (
-              <SwiperSlide key={event.id} className="max-w-[432px] min-h-48">
-                <EventCard event={event} />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </div>
+      </FadeIn>
     </section>
   );
 }

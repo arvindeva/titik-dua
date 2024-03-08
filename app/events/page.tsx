@@ -4,7 +4,6 @@ import { kobe } from "../fonts/fonts";
 import FeaturedEvents from "@/components/events/featured-events";
 import PastEvents from "@/components/events/past-events";
 import Experience from "@/components/events/experience";
-import CTAMobile from "@/components/ui/cta-mobile";
 
 export default function EventsPage() {
   return (
@@ -19,7 +18,6 @@ export default function EventsPage() {
       <FeaturedEvents />
       <PastEvents />
       <Experience />
-      <CTAMobile />
     </main>
   );
 }

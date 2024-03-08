@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 import { FreeMode, Navigation, Mousewheel } from "swiper/modules";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { data } from "@/data";
+import FadeIn from "@/components/animation/fade-in";
 
 interface ExperienceCardProps {
   experience: {
@@ -88,76 +89,84 @@ export default function Experience() {
   return (
     <section className="bg-td-beige text-td-black w-full py-10 !overflow-hidden lg:px-12">
       <div className="px-4 max-w-content mx-auto lg:px-0">
-        <h1
-          className={cn(
-            "text-[40px] font-bold lg:text-[64px] mb-8 leading-none",
-            kobe.className,
-          )}
-        >
-          experience
-        </h1>
+        <FadeIn from="bottom">
+          <h1
+            className={cn(
+              "text-[40px] font-bold lg:text-[64px] mb-8 leading-none",
+              kobe.className,
+            )}
+          >
+            experience
+          </h1>
+        </FadeIn>
 
         <div className="lg:flex flex-row items-end justify-between">
-          <p className="mb-10 text-sm leading-tight font-normal w-full lg:w-1/2 lg:text-base lg:leading-tight">
-            We&apos;re located in Peliatan Village, a stones throw from Ubud.
-            Few will argue about Ubud&apos;s lure. As the epicenter of
-            Bali&apos;s rich culture where art, tradition, and spirituality
-            blend and converge in a beautiful harmony. Built on a solid
-            foundation of local creative artistry, Ubud remains a mecca for
-            Balinese artists and international entrepreneurs; in recent decades,
-            Ubud has evolved into one of the world&apos;s top destinations for
-            yoga, health & wellness, and innovative dining.
-          </p>
+          <FadeIn from="bottom">
+            <p className="mb-10 text-sm leading-tight font-normal w-full lg:w-1/2 lg:text-base lg:leading-tight">
+              We&apos;re located in Peliatan Village, a stones throw from Ubud.
+              Few will argue about Ubud&apos;s lure. As the epicenter of
+              Bali&apos;s rich culture where art, tradition, and spirituality
+              blend and converge in a beautiful harmony. Built on a solid
+              foundation of local creative artistry, Ubud remains a mecca for
+              Balinese artists and international entrepreneurs; in recent
+              decades, Ubud has evolved into one of the world&apos;s top
+              destinations for yoga, health & wellness, and innovative dining.
+            </p>
+          </FadeIn>
+          <FadeIn from="right">
+            <div className="w-full lg:w-1/2 text-end hidden lg:flex flex-row items-center justify-end gap-x-2 mb-8">
+              <Button className="home-experiences-prev-button text-td-white bg-td-black h-[44px] w-[44px] p-0 active:bg-zinc-500">
+                <GoArrowLeft size={30} />
+              </Button>
 
-          <div className="w-full lg:w-1/2 text-end hidden lg:flex flex-row items-center justify-end gap-x-2 mb-8">
-            <Button className="home-events-prev-button text-td-white bg-td-black h-[44px] w-[44px] p-0 active:bg-zinc-500">
-              <GoArrowLeft size={30} />
-            </Button>
-
-            <Button className="home-events-next-button text-td-white bg-td-black h-[44px] w-[44px] p-0 active:bg-zinc-500">
-              <GoArrowRight size={30} />
-            </Button>
+              <Button className="home-experiences-next-button text-td-white bg-td-black h-[44px] w-[44px] p-0 active:bg-zinc-500">
+                <GoArrowRight size={30} />
+              </Button>
+            </div>
+          </FadeIn>
+        </div>
+      </div>
+      <FadeIn from="right" threshold={0.25}>
+        <div className="lg:hidden flex overflow-x-scroll hide-scroll-bar">
+          <div className="flex flex-nowrap px-4 overflow-x-visible gap-x-4">
+            {data.experiences.map((experience, i) => {
+              return (
+                <ExperienceCard key={experience.id} experience={experience} />
+              );
+            })}
           </div>
         </div>
-      </div>
+      </FadeIn>
 
-      <div className="lg:hidden flex overflow-x-scroll hide-scroll-bar">
-        <div className="flex flex-nowrap px-4 overflow-x-visible gap-x-4">
-          {data.experiences.map((experience, i) => {
-            return (
-              <ExperienceCard key={experience.id} experience={experience} />
-            );
-          })}
+      <FadeIn from="right" threshold={0.25}>
+        <div className="hidden !max-w-content mx-auto lg:block hide-scroll-bar">
+          <Swiper
+            slidesPerView={"auto"}
+            mousewheel={{
+              forceToAxis: true,
+            }}
+            spaceBetween={24}
+            navigation={{
+              prevEl: ".home-experiences-prev-button",
+              nextEl: ".home-experiences-next-button",
+            }}
+            freeMode={true}
+            modules={[FreeMode, Navigation, Mousewheel]}
+            className="mySwiper !overflow-visible"
+          >
+            {data.experiences.map((experience, i) => {
+              return (
+                <SwiperSlide
+                  key={experience.id}
+                  className="max-w-[432px] min-h-48"
+                >
+                  <ExperienceCard experience={experience} />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
-      </div>
-
-      <div className="hidden !max-w-content mx-auto lg:block hide-scroll-bar">
-        <Swiper
-          slidesPerView={"auto"}
-          mousewheel={{
-            forceToAxis: true,
-          }}
-          spaceBetween={24}
-          navigation={{
-            prevEl: ".home-events-prev-button",
-            nextEl: ".home-events-next-button",
-          }}
-          freeMode={true}
-          modules={[FreeMode, Navigation, Mousewheel]}
-          className="mySwiper !overflow-visible"
-        >
-          {data.experiences.map((experience, i) => {
-            return (
-              <SwiperSlide
-                key={experience.id}
-                className="max-w-[432px] min-h-48"
-              >
-                <ExperienceCard experience={experience} />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </div>
+      </FadeIn>
     </section>
   );
 }

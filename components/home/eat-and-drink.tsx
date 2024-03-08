@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { data } from "@/data";
+import FadeIn from "@/components/animation/fade-in";
 
 interface EatAndDrinkCardProps {
   restaurant: {
@@ -60,32 +61,42 @@ export default function EatAndDrink() {
   return (
     <section className="bg-td-beige text-td-black w-full py-10 overflow-visible lg:px-12">
       <div className="px-4 lg:px-0 max-w-content mx-auto">
-        <h1
-          className={cn(
-            "text-[40px] font-bold lg:text-[64px] mb-8 leading-none",
-            kobe.className,
-          )}
-        >
-          eat and drink
-        </h1>
-        <p className="mb-10 lg:w-1/2 text-sm lg:text-base leading-tight lg:leading-tight  font-regular">
-          An Asian fusion dining experience using local ingredients from the
-          island’s soil and ocean. An all-day eatery serving early bites to
-          evening dinner through to nightcaps at our Rooftop, plus a laid back
-          indoor-outdoor bar by the pool with local bites. To top it off we have
-          our speakeasy bar serving the finest Arak infused cocktails and
-          natural wines.
-        </p>
+        <FadeIn from="bottom">
+          <h1
+            className={cn(
+              "text-[40px] font-bold lg:text-[64px] mb-8 leading-none",
+              kobe.className,
+            )}
+          >
+            eat and drink
+          </h1>
+        </FadeIn>
+        <FadeIn from="bottom">
+          <p className="mb-10 lg:w-1/2 text-sm lg:text-base leading-tight lg:leading-tight  font-regular">
+            An Asian fusion dining experience using local ingredients from the
+            island’s soil and ocean. An all-day eatery serving early bites to
+            evening dinner through to nightcaps at our Rooftop, plus a laid back
+            indoor-outdoor bar by the pool with local bites. To top it off we
+            have our speakeasy bar serving the finest Arak infused cocktails and
+            natural wines.
+          </p>
+        </FadeIn>
       </div>
-
-      <div className="flex overflow-x-scroll max-w-content mx-auto hide-scroll-bar">
-        <div className="px-4 lg:px-0 flex flex-nowrap overflow-x-visible gap-x-4 hide-scroll-bar">
-          {data.foodsAndDrinks.map((restaurant) => {
-            return (
-              <EatAndDrinkCard key={restaurant.id} restaurant={restaurant} />
-            );
-          })}
-        </div>
+      <div className="overflow-hidden">
+        <FadeIn from="right">
+          <div className="flex overflow-x-scroll max-w-content mx-auto hide-scroll-bar">
+            <div className="px-4 lg:px-0 flex flex-nowrap overflow-x-visible gap-x-4 hide-scroll-bar">
+              {data.foodsAndDrinks.map((restaurant) => {
+                return (
+                  <EatAndDrinkCard
+                    key={restaurant.id}
+                    restaurant={restaurant}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </FadeIn>
       </div>
     </section>
   );
