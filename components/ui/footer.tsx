@@ -47,8 +47,8 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      <div className="flex flex-col gap-y-10 lg:flex-row lg:justify-between lg:w-full lg:items-center">
-        <div className="flex flex-col gap-y-10 lg:flex-row lg:gap-x-4 items-center">
+      <div className="flex flex-col gap-y-10 lg:flex-row lg:justify-between lg:w-full lg:items-center lg:-mt-3">
+        <div className="flex flex-col gap-y-10 lg:flex-row lg:gap-x-4 lg:items-center">
           <p className="text-sm lg:text-base leading-tight font-normal">
             &copy; 2024 Titik Dua. PT Titik Titik Terang. All Rights Reserved.
           </p>

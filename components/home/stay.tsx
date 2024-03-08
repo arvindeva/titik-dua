@@ -9,18 +9,28 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { FreeMode, Navigation, Mousewheel } from "swiper/modules";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+import { data } from "@/data";
 
-function RoomCard() {
+interface RoomCardProps {
+  room: {
+    id: number;
+    name: string;
+    description: string;
+    imageUrl: string;
+  };
+}
+
+function RoomCard({ room }: RoomCardProps) {
   return (
     <div className="">
-      <Card className="w-72 lg:w-[432px] rounded-none border-0 bg-td-beige">
+      <Card className="w-72 lg:w-[432px] xl:w-[550px] rounded-none border-0 bg-td-beige">
         <div className="h-56 lg:h-[324px] w-full bg-zinc-400 overflow-hidden">
           <Image
-            className="object-cover w-80 h-60 lg:w-[432px] lg:h-[324px]"
-            src="/images/frasa-room.jpg"
+            className="object-cover w-80 h-60 lg:w-[432px] xl:w-[550px] lg:h-[324px]"
+            src={room.imageUrl}
             alt="Sunset in the mountains"
-            width="500"
-            height="400"
+            width="600"
+            height="500"
           />
         </div>
         <div className="p-4 lg:p-6 text-start">
@@ -30,12 +40,10 @@ function RoomCard() {
               kobe.className,
             )}
           >
-            frasa room
+            {room.name}
           </div>
           <p className="text-gray-700 text-sm lg:text-base leading-[1.1] lg:leading-tight line-clamp-5 h-24 lg:h-36 mb-4">
-            A place where couples can enjoy each other&apos;s company while
-            bathing in an exposed jacuzzi right in the middle of the living
-            room.
+            {room.description}
           </p>
           <div className="buttons flex flex-row gap-x-2">
             <Button className="w-1/2 h-9 text-base lg:h-[47px] lg:text-xl">
@@ -67,10 +75,9 @@ export default function Stay() {
 
       <div className="lg:hidden flex overflow-x-scroll pb-4 px-4 hide-scroll-bar">
         <div className="flex flex-nowrap overflow-x-visible gap-x-4">
-          <RoomCard />
-          <RoomCard />
-          <RoomCard />
-          <RoomCard />
+          {data.rooms.map((room, i) => {
+            return <RoomCard key={i} room={room} />;
+          })}
         </div>
       </div>
 
@@ -104,10 +111,13 @@ export default function Stay() {
           modules={[FreeMode, Navigation, Mousewheel]}
           className="mySwiper !overflow-visible"
         >
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((card, i) => {
+          {data.rooms.map((room, i) => {
             return (
-              <SwiperSlide key={i} className="max-w-[432px] min-h-48">
-                <RoomCard />
+              <SwiperSlide
+                key={i}
+                className="lg:max-w-[432px] xl:max-w-[550px] min-h-48"
+              >
+                <RoomCard key={i} room={room} />
               </SwiperSlide>
             );
           })}
