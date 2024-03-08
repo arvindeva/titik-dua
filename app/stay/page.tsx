@@ -13,6 +13,7 @@ import Footer from "@/components/ui/footer";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import SpecialOffers from "@/components/stay/special-offers";
+import { motion } from "framer-motion";
 
 const data = [
   {
@@ -84,7 +85,7 @@ function RoomCard({ name, description, imageUrl }: RoomCardProps) {
         <h1
           className={cn(
             "font-bold text-[40px] leading-[30px] mb-6",
-            kobe.className
+            kobe.className,
           )}
         >
           {name}
@@ -109,7 +110,7 @@ export default function StayPage() {
         <h1
           className={cn(
             "text-[56px] leading-[46px] mb-4 font-semibold",
-            kobe.className
+            kobe.className,
           )}
         >
           our luxury boutique hotel in ubud

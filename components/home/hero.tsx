@@ -1,8 +1,10 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { kobe } from "../../app/fonts/fonts";
 import { cn } from "@/lib/utils";
 import * as React from "react";
+import { motion } from "framer-motion";
 
 function DateInput() {
   return (
@@ -71,15 +73,17 @@ export default function Hero() {
           <source src="/videos/td-hero-mobile.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <video
+        <motion.video
           autoPlay
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           loop
           muted
           className="hidden md:inline-block absolute z-10 w-auto min-w-full min-h-full max-w-none"
         >
           <source src="/videos/td-hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </motion.video>
       </div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-td-white"></div>
       <CheckAvailability />

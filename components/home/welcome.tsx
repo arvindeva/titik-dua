@@ -1,12 +1,19 @@
+"use client";
+
 import { Button } from "../ui/button";
 import { kobe } from "@/app/fonts/fonts";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Welcome() {
   return (
     <section className="bg-td-beige w-full">
-      <div className="flex flex-col lg:flex-row gap-y-10 px-4 py-10 lg:px-12 lg:py-16 xl:py-32 lg:gap-x-12 xl:gap-x-16 mx-auto max-w-content">
+      <motion.div
+        className="flex flex-col lg:flex-row gap-y-10 px-4 py-10 lg:px-12 lg:py-16 xl:py-32 lg:gap-x-12 xl:gap-x-16 mx-auto max-w-content"
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+      >
         <div
           className={cn(
             "lg:w-1/2 font-bold text-[52px] md:text-[64px] xl:text-[80px] 2xl:text-[96px] lg:tracking-normal leading-[0.8]",
@@ -32,7 +39,7 @@ export default function Welcome() {
             </Button>
           </Link>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

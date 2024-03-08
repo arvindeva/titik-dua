@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import { FreeMode, Navigation, Mousewheel } from "swiper/modules";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { data } from "@/data";
+import { motion } from "framer-motion";
 
 interface RoomCardProps {
   room: {
@@ -69,14 +70,16 @@ export default function Stay() {
   return (
     <section className="bg-white w-full py-5 lg:py-12 !overflow-hidden lg:px-12">
       <div className="mx-auto px-4 lg:px-0 max-w-content">
-        <h1
+        <motion.h1
           className={cn(
             "text-[40px] font-bold leading-none mb-4 lg:text-[64px]",
             kobe.className,
           )}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
         >
           stay
-        </h1>
+        </motion.h1>
       </div>
 
       <div className="lg:hidden flex overflow-x-scroll pb-4 px-4 hide-scroll-bar">
