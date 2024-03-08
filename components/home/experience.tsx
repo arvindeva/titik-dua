@@ -28,23 +28,28 @@ function ExperienceCard() {
             Wellness
           </div>
         </div>
-        <div className="bg-td-beige">
-          <div className={cn("font-semibold text-3xl mb-3", kobe.className)}>
+        <div className="bg-td-beige py-2">
+          <div
+            className={cn(
+              "font-semibold text-3xl lg:text-[40px] mb-3",
+              kobe.className,
+            )}
+          >
             morning yoga
           </div>
-          <p className="text-td-black text-sm leading-[1.1] leading line-clamp-3 mb-6">
-            wake up with our daily yoga sessions.
+          <p className="text-td-black text-sm lg:text-base leading-[1.1] h-[48px] leading line-clamp-3 mb-6">
+            Wake up with our daily yoga sessions.
           </p>
-          <div className="text-sm flex flex-col gap-y-1 mb-6">
+          <div className="text-sm lg:text-base flex flex-col gap-y-1 lg:gap-y-2 mb-6">
             <p className="flex flex-row items-center gap-x-1">
               <span>
-                <LuMapPin />
+                <LuMapPin size={20} />
               </span>
               <span>Amphitheatre</span>
             </p>
             <p className="flex flex-row items-center gap-x-1">
               <span>
-                <LuClock />
+                <LuClock size={20} />
               </span>
               <span>7:00 AM</span>
             </p>
@@ -76,7 +81,7 @@ export default function Experience() {
           experience
         </h1>
 
-        <div className="lg:flex flex-row items-center justify-between">
+        <div className="lg:flex flex-row items-end justify-between">
           <p className="mb-10 text-sm leading-tight font-normal w-full lg:w-1/2 lg:text-base lg:leading-tight">
             We&apos;re located in Peliatan Village, a stones throw from Ubud.
             Few will argue about Ubud&apos;s lure. As the epicenter of
@@ -89,11 +94,11 @@ export default function Experience() {
           </p>
 
           <div className="w-full lg:w-1/2 text-end hidden lg:flex flex-row items-center justify-end gap-x-2 mb-8">
-            <Button className="home-events-prev-button text-td-black bg-td-beige h-[44px] w-[44px] p-0 hover:bg-td-white active:bg-zinc-500">
+            <Button className="home-events-prev-button text-td-white bg-td-black h-[44px] w-[44px] p-0 active:bg-zinc-500">
               <GoArrowLeft size={30} />
             </Button>
 
-            <Button className="home-events-next-button text-td-black bg-td-beige h-[44px] w-[44px] p-0 hover:bg-td-white active:bg-zinc-500">
+            <Button className="home-events-next-button text-td-white bg-td-black h-[44px] w-[44px] p-0 active:bg-zinc-500">
               <GoArrowRight size={30} />
             </Button>
           </div>
@@ -116,7 +121,7 @@ export default function Experience() {
           mousewheel={{
             forceToAxis: true,
           }}
-          spaceBetween={16}
+          spaceBetween={24}
           navigation={{
             prevEl: ".home-events-prev-button",
             nextEl: ".home-events-next-button",

@@ -4,10 +4,10 @@ import { kobe } from "../../app/fonts/fonts";
 import { cn } from "@/lib/utils";
 import * as React from "react";
 
-function Label() {
+function DateInput() {
   return (
     <Input
-      type="date"
+      type="text"
       name="check-in"
       id="check-in"
       placeholder="Check in"
@@ -16,6 +16,17 @@ function Label() {
   );
 }
 
+function GuestInput() {
+  return (
+    <Input
+      type="text"
+      name="guest"
+      id="guest"
+      placeholder="1 guest"
+      className="h-[56px] w-[311px] rounded-xl"
+    />
+  );
+}
 function CheckAvailability() {
   return (
     <section className="z-10 hidden xl:inline-block  absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-td-beige rounded-3xl px-8 py-4 shadow-xl">
@@ -30,11 +41,11 @@ function CheckAvailability() {
         </p>
         <div className="flex flex-col">
           <label className="text-sm mb-1">Check in / checkout</label>
-          <Label />
+          <DateInput />
         </div>
         <div className="flex flex-col">
           <label className="text-sm mb-1">Guests</label>
-          <Label />
+          <GuestInput />
         </div>
         <div className="flex flex-col">
           <label className="invisible">check availability</label>

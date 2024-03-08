@@ -45,10 +45,13 @@ export default function PrivateEvents() {
           <h1 className={cn("font-bold text-[40px] mb-8", kobe.className)}>
             private events
           </h1>
-          <p className="text-sm mb-10 leading-tight font-normal lg:text-base">
-            Titik Dua offers 6 multi-purpose spaces, an open-air amphitheater,
-            to accommodate corporate events, wellness retreats, and intimate
-            weddings.
+          <p className="text-sm mb-10 leading-tight font-normal lg:text-base lg:leading-tight">
+            Memorable events are at the heart of Titik Dua. Featuring 6
+            multi-purpose spaces and an open-air amphitheater, offering a
+            diverse venue choice for corporate events, wellness retreats, and
+            intimate weddings. In keeping with our mission of bringing local
+            creative talent to the global stage, Titik Dua presents a regular
+            lineup of designed-led exhibitions, innovative talks, and workshops.
           </p>
           <div className="w-full lg:w-auto flex flex-row gap-x-3">
             <Button className="w-1/2 lg:w-[180px] text-xl">Contact us</Button>

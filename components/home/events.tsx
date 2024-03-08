@@ -29,23 +29,28 @@ function EventCard() {
           </div>
         </div>
         <div className="">
-          <div className={cn("font-semibold text-3xl mb-3", kobe.className)}>
+          <div
+            className={cn(
+              "font-semibold text-3xl lg:text-[40px] pt-2 mb-3",
+              kobe.className,
+            )}
+          >
             benang merah
           </div>
-          <p className="text-td-white text-sm leading-[1.1] leading line-clamp-3 h-20 mb-2">
+          <p className="text-td-white text-sm lg:text-base leading-[1.1] leading line-clamp-3 h-20 mb-2">
             Exhibition by Setia Cap Cili. From 1 february - 21 february. Opening
             night:
           </p>
-          <div className="text-sm flex flex-col gap-y-1 mb-6">
+          <div className="text-sm lg:text-base flex flex-col gap-y-1 lg:gap-y-2 mb-6">
             <p className="flex flex-row items-center gap-x-1">
               <span>
-                <LuMapPin />
+                <LuMapPin size={20} />
               </span>
               <span>Art Gallery</span>
             </p>
             <p className="flex flex-row items-center gap-x-1">
               <span>
-                <LuClock />
+                <LuClock size={20} />
               </span>
               <span>17:00 PM - 22:00 PM</span>
             </p>
@@ -107,7 +112,7 @@ export default function Events() {
           mousewheel={{
             forceToAxis: true,
           }}
-          spaceBetween={16}
+          spaceBetween={24}
           navigation={{
             prevEl: ".home-events-prev-button",
             nextEl: ".home-events-next-button",

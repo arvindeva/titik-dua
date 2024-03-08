@@ -15,7 +15,7 @@ export default function Welcome() {
           welcome to tanah titik dua
         </div>
         <div className="lg:w-1/2">
-          <p className="text-sm lg:text-base mb-10 font-normal lg:leading-tight tracking-tight">
+          <p className="text-sm lg:text-base mb-10 font-normal lg:leading-tight">
             An independent boutique hotel showcasing contemporary Indonesian
             design, art, and culture. Titik Dua offers design-savvy travelers a
             unique stay experience with custom-designed rooms, with a

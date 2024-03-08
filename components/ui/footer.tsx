@@ -7,11 +7,11 @@ import ScrollToTop from "./scroll-to-top";
 
 export default function Footer() {
   return (
-    <footer className="w-full flex flex-col pt-10 pb-32 gap-y-10 bg-td-black text-td-white px-4 lg:px-12">
+    <footer className="w-full flex flex-col pt-10 pb-32 lg:pb-16 gap-y-10 bg-td-black text-td-white px-4 lg:px-12">
       <div className="w-[126px]">
         <LogoFull color="white" />
       </div>
-      <p className="text-sm leading-tight font-normal">
+      <p className="text-sm lg:text-base leading-tight font-normal">
         Jl. Cok Rai Pudak No. 48, Peliatan, Kecamatan Ubud, Kabupaten Gianyar,
         Bali 80571, Indonesia
       </p>
@@ -48,10 +48,14 @@ export default function Footer() {
         </ul>
       </div>
       <div className="flex flex-col gap-y-10 lg:flex-row lg:justify-between lg:w-full lg:items-center">
-        <p className="text-sm leading-tight font-normal">
-          &copy; 2024 Titik Dua. PT Titik Titik Terang. All Rights Reserved.
-        </p>
-        <p className="text-sm">Privacy policy</p>
+        <div className="flex flex-col gap-y-10 lg:flex-row lg:gap-x-4 items-center">
+          <p className="text-sm lg:text-base leading-tight font-normal">
+            &copy; 2024 Titik Dua. PT Titik Titik Terang. All Rights Reserved.
+          </p>
+          <p className="text-sm lg:text-base leading-tight font-normal">
+            Privacy policy
+          </p>
+        </div>
         <div className="w-full lg:w-auto text-center px-0">
           <ScrollToTop />
         </div>
