@@ -4,18 +4,28 @@ import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import { data } from "@/data";
 
-function EatAndDrinkCard() {
+interface EatAndDrinkCardProps {
+  restaurant: {
+    id: number;
+    name: string;
+    description: string;
+    imageUrl: string;
+  };
+}
+
+function EatAndDrinkCard({ restaurant }: EatAndDrinkCardProps) {
   return (
-    <div className="">
+    <div className="w-full">
       <Card className="min-w-[164px] rounded-none border-0 bg-transparent text-td-black shadow-none">
         <div className="relative w-full bg-transparent overflow-hidden mb-3">
           <Image
             className="object-cover w-full  h-full"
-            src="/images/ramu-kitchen.jpg"
+            src={restaurant.imageUrl}
             alt="Sunset in the mountains"
             width="800"
-            height="500"
+            height="800"
           />
         </div>
         <div className="">
@@ -25,13 +35,13 @@ function EatAndDrinkCard() {
               kobe.className,
             )}
           >
-            ramu kitchen
+            {restaurant.name}
           </div>
-          <p className=" text-xs lg:text-base leading-[1.1] lg:leading-tight line-clamp-4 h-14 lg:h-24 mb-6">
-            An Asian fusion dining experience taking local ingredients from the
-            island&apos;s soil and ocean.
-          </p>
-
+          <div className="h-16 lg:h-32">
+            <p className=" text-xs lg:text-base leading-[1.1] lg:leading-tight line-clamp-3 lg:line-clamp-4">
+              {restaurant.description}
+            </p>
+          </div>
           <div className="buttons flex flex-row gap-x-2">
             <Button
               className="w-full h-9 lg:h-12 lg:text-xl text-base "
@@ -69,11 +79,12 @@ export default function EatAndDrink() {
       </div>
 
       <div className="flex overflow-x-scroll max-w-content mx-auto hide-scroll-bar">
-        <div className="px-4 lg:px-0 flex flex-nowrap overflow-x-visible gap-x-4">
-          <EatAndDrinkCard />
-          <EatAndDrinkCard />
-          <EatAndDrinkCard />
-          <EatAndDrinkCard />
+        <div className="px-4 lg:px-0 flex flex-nowrap overflow-x-visible gap-x-4 hide-scroll-bar">
+          {data.foodsAndDrinks.map((restaurant) => {
+            return (
+              <EatAndDrinkCard key={restaurant.id} restaurant={restaurant} />
+            );
+          })}
         </div>
       </div>
     </section>

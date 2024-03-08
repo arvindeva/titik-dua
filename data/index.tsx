@@ -96,4 +96,60 @@ export const data = {
       imageUrl: "/images/featured-events/2.jpg",
     },
   ],
+  foodsAndDrinks: [
+    {
+      id: 1,
+      name: "ramu kitchen",
+      description:
+        "An Asian fusion dining experience taking local ingredients from the island's soil and ocean.",
+      imageUrl: "/images/foods-and-drinks/1.jpg",
+    },
+    {
+      id: 2,
+      name: "pool bar",
+      description:
+        "An all-day eatery serving early bites to evening dinner through to nightcaps at our Rooftop, plus a laid back indoor-outdoor bar by the pool with local bites.",
+      imageUrl: "/images/foods-and-drinks/2.jpg",
+    },
+    {
+      id: 3,
+      name: "rooftop bar",
+      description:
+        "An all-day eatery serving early bites to evening dinner through to nightcaps at our Rooftop, plus a laid back indoor-outdoor bar by the pool with local bites.",
+      imageUrl: "/images/foods-and-drinks/3.jpg",
+    },
+    {
+      id: 4,
+      name: "coca bar",
+      description:
+        "An all-day eatery serving early bites to evening dinner through to nightcaps at our Rooftop, plus a laid back indoor-outdoor bar by the pool with local bites.",
+      imageUrl: "/images/foods-and-drinks/4.jpg",
+    },
+  ],
+  experiences: [
+    {
+      id: 1,
+      name: "morning yoga",
+      description: "wake up with our daily yoga sessions",
+      imageUrl: "/images/experiences/1.jpg",
+    },
+    {
+      id: 2,
+      name: "morning walk",
+      description: "discover the beauty of Ubud.",
+      imageUrl: "/images/experiences/2.jpg",
+    },
+    {
+      id: 3,
+      name: "mountain biking",
+      description: "explore the island on two wheels.",
+      imageUrl: "/images/experiences/3.jpg",
+    },
+    {
+      id: 4,
+      name: "hiking",
+      description: "explore the island on two legs.",
+      imageUrl: "/images/experiences/4.jpg",
+    },
+  ],
 };

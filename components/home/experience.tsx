@@ -11,15 +11,25 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { FreeMode, Navigation, Mousewheel } from "swiper/modules";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+import { data } from "@/data";
 
-function ExperienceCard() {
+interface ExperienceCardProps {
+  experience: {
+    id: number;
+    name: string;
+    description: string;
+    imageUrl: string;
+  };
+}
+
+function ExperienceCard({ experience }: ExperienceCardProps) {
   return (
     <div className="">
       <Card className="w-72 lg:w-[432px] rounded-none border-0 border-transparent bg-transparent text-td-black shadow-none text-start">
         <div className="relative h-72 lg:h-[432px] w-full bg-transparent overflow-hidden mb-1 lg:mb-0">
           <Image
             className="object-cover w-72 h-72 lg:h-[432px] lg:w-[432px]"
-            src="/images/morning-yoga.jpg"
+            src={experience.imageUrl}
             alt="Sunset in the mountains"
             width="600"
             height="600"
@@ -35,10 +45,10 @@ function ExperienceCard() {
               kobe.className,
             )}
           >
-            morning yoga
+            {experience.name}
           </div>
           <p className="text-td-black text-sm lg:text-base leading-[1.1] h-[48px] leading line-clamp-3 mb-6">
-            Wake up with our daily yoga sessions.
+            {experience.description}
           </p>
           <div className="text-sm lg:text-base flex flex-col gap-y-1 lg:gap-y-2 mb-6">
             <p className="flex flex-row items-center gap-x-1">
@@ -113,15 +123,15 @@ export default function Experience() {
 
       <div className="lg:hidden flex overflow-x-scroll hide-scroll-bar">
         <div className="flex flex-nowrap px-4 overflow-x-visible gap-x-4">
-          <ExperienceCard />
-          <ExperienceCard />
-          <ExperienceCard />
-          <ExperienceCard />
-          <ExperienceCard />
+          {data.experiences.map((experience, i) => {
+            return (
+              <ExperienceCard key={experience.id} experience={experience} />
+            );
+          })}
         </div>
       </div>
 
-      <div className="hidden !max-w-content mx-auto lg:block">
+      <div className="hidden !max-w-content mx-auto lg:block hide-scroll-bar">
         <Swiper
           slidesPerView={"auto"}
           mousewheel={{
@@ -136,10 +146,13 @@ export default function Experience() {
           modules={[FreeMode, Navigation, Mousewheel]}
           className="mySwiper !overflow-visible"
         >
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((card, i) => {
+          {data.experiences.map((experience, i) => {
             return (
-              <SwiperSlide key={i} className="max-w-[432px] min-h-48">
-                <ExperienceCard />
+              <SwiperSlide
+                key={experience.id}
+                className="max-w-[432px] min-h-48"
+              >
+                <ExperienceCard experience={experience} />
               </SwiperSlide>
             );
           })}

@@ -81,7 +81,7 @@ function EventCard({ event }: EventCardProps) {
 
 export default function Events() {
   return (
-    <section className="bg-td-black text-td-white w-full pt-10 pb-10 overflow-hidden lg:px-12">
+    <section className="bg-td-black text-td-white w-full pt-10 pb-10 lg:pb-16 overflow-hidden lg:px-12">
       <div className="mx-auto px-4 lg:px-0 max-w-content">
         <h1
           className={cn(
