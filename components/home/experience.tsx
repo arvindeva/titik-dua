@@ -100,8 +100,8 @@ export default function Experience() {
           </h1>
         </FadeIn>
 
-        <div className="lg:flex flex-row items-end justify-between">
-          <FadeIn from="bottom">
+        <FadeIn from="bottom" threshold={0.25}>
+          <div className="lg:flex flex-row items-end justify-between">
             <p className="mb-10 text-sm leading-tight font-normal w-full lg:w-1/2 lg:text-base lg:leading-tight">
               We&apos;re located in Peliatan Village, a stones throw from Ubud.
               Few will argue about Ubud&apos;s lure. As the epicenter of
@@ -112,19 +112,16 @@ export default function Experience() {
               decades, Ubud has evolved into one of the world&apos;s top
               destinations for yoga, health & wellness, and innovative dining.
             </p>
-          </FadeIn>
-          <FadeIn from="right">
             <div className="w-full lg:w-1/2 text-end hidden lg:flex flex-row items-center justify-end gap-x-2 mb-8">
-              <Button className="home-experiences-prev-button text-td-white bg-td-black h-[44px] w-[44px] p-0 active:bg-zinc-500">
+              <Button className="home-experiences-prev-button text-td-white h-[44px] w-[44px] bg-td-black p-0 active:bg-zinc-500">
                 <GoArrowLeft size={30} />
               </Button>
-
-              <Button className="home-experiences-next-button text-td-white bg-td-black h-[44px] w-[44px] p-0 active:bg-zinc-500">
+              <Button className="home-experiences-next-button text-td-white h-[44px] w-[44px] bg-td-black  p-0 active:bg-zinc-500">
                 <GoArrowRight size={30} />
               </Button>
             </div>
-          </FadeIn>
-        </div>
+          </div>
+        </FadeIn>
       </div>
       <FadeIn from="right" threshold={0.25}>
         <div className="lg:hidden flex overflow-x-scroll hide-scroll-bar">
