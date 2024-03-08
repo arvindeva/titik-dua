@@ -11,18 +11,28 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { FreeMode, Navigation, Mousewheel } from "swiper/modules";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+import { data } from "@/data";
 
-function EventCard() {
+interface EventCardProps {
+  event: {
+    id: number;
+    name: string;
+    description: string;
+    imageUrl: string;
+  };
+}
+
+function EventCard({ event }: EventCardProps) {
   return (
     <div className="">
       <Card className="w-72 lg:w-[432px] rounded-none border-0 bg-td-black text-td-white text-start">
         <div className="relative h-72 lg:h-[432px] w-full bg-transparent overflow-hidden mb-1">
           <Image
-            className="object-cover w-72 h-72 lg:w-[432px] lg:h-[432px]"
-            src="/images/benang-merah.jpg"
+            className="object-cover"
+            src={event.imageUrl}
             alt="benang merah"
-            width="600"
-            height="600"
+            width="750"
+            height="750"
           />
           <div className="absolute bottom-2 left-2 bg-td-beige font-medium text-td-black text-base px-2.5 py-1 rounded-full">
             Art
@@ -35,7 +45,7 @@ function EventCard() {
               kobe.className,
             )}
           >
-            benang merah
+            {event.name}
           </div>
           <p className="text-td-white text-sm lg:text-base leading-[1.1] leading line-clamp-3 h-20 mb-2">
             Exhibition by Setia Cap Cili. From 1 february - 21 february. Opening
@@ -99,10 +109,10 @@ export default function Events() {
 
       <div className="lg:hidden flex overflow-x-scroll pb-4 px-4 hide-scroll-bar">
         <div className="flex flex-nowrap !overflow-x-visible gap-x-4">
-          <EventCard />
-          <EventCard />
-          <EventCard />
-          <EventCard />
+          <EventCard event={data.featuredEvents[0]} />
+          <EventCard event={data.featuredEvents[1]} />
+          <EventCard event={data.featuredEvents[2]} />
+          <EventCard event={data.featuredEvents[3]} />
         </div>
       </div>
 
@@ -121,10 +131,10 @@ export default function Events() {
           modules={[FreeMode, Navigation, Mousewheel]}
           className="mySwiper !overflow-visible"
         >
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((card, i) => {
+          {data.featuredEvents.map((event, i) => {
             return (
-              <SwiperSlide key={i} className="max-w-[432px] min-h-48">
-                <EventCard />
+              <SwiperSlide key={event.id} className="max-w-[432px] min-h-48">
+                <EventCard event={event} />
               </SwiperSlide>
             );
           })}

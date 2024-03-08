@@ -57,4 +57,43 @@ export const data = {
       imageUrl: "/images/rooms/jeda/1.jpg",
     },
   ],
+  featuredEvents: [
+    {
+      id: 1,
+      name: "benang merah",
+      description:
+        "Exhibition by Setia Cap Cili. From 1 february - 21 february. Opening night:",
+      imageUrl: "/images/featured-events/1.jpg",
+    },
+
+    {
+      id: 2,
+      name: "present space",
+      description:
+        "Exhibition by Setia Cap Cili. From 1 february - 21 february. Opening night:",
+      imageUrl: "/images/featured-events/2.jpg",
+    },
+
+    {
+      id: 3,
+      name: "unconditional love",
+      description:
+        "Exhibition by Setia Cap Cili. From 1 february - 21 february. Opening night:",
+      imageUrl: "/images/featured-events/3.jpg",
+    },
+    {
+      id: 4,
+      name: "benang in space",
+      description:
+        "Exhibition by Setia Cap Cili. From 1 february - 21 february. Opening night:",
+      imageUrl: "/images/featured-events/1.jpg",
+    },
+    {
+      id: 5,
+      name: "future space",
+      description:
+        "Exhibition by Setia Cap Cili. From 1 february - 21 february. Opening night:",
+      imageUrl: "/images/featured-events/2.jpg",
+    },
+  ],
 };

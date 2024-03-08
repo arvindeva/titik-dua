@@ -114,10 +114,10 @@ export default function Stay() {
           {data.rooms.map((room, i) => {
             return (
               <SwiperSlide
-                key={i}
+                key={room.id}
                 className="lg:max-w-[432px] xl:max-w-[550px] min-h-48"
               >
-                <RoomCard key={i} room={room} />
+                <RoomCard room={room} />
               </SwiperSlide>
             );
           })}
