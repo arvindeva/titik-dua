@@ -89,7 +89,7 @@ export default function Stay() {
           </div>
         </div>
       </FadeIn>
-      <FadeIn from="right" threshold={0.5}>
+      <FadeIn from="right" threshold={0.3}>
         <div className="hidden mx-auto lg:block max-w-content">
           <div className="w-full text-end flex flex-row items-center justify-end gap-x-2 mb-8">
             <Button

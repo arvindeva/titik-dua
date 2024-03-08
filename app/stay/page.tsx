@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 import { kobe } from "../fonts/fonts";
-import CTAMobile from "@/components/ui/cta-mobile";
 import {
   Carousel,
   CarouselContent,
@@ -9,11 +8,9 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Deluxe from "@/components/stay/deluxe";
-import Footer from "@/components/ui/footer";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import SpecialOffers from "@/components/stay/special-offers";
-import { motion } from "framer-motion";
 
 const data = [
   {

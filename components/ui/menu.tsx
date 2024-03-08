@@ -4,9 +4,7 @@ import { Button } from "./button";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
-  SheetTitle,
   SheetClose,
   SheetTrigger,
 } from "@/components/ui/sheet";
@@ -14,7 +12,7 @@ import Link from "next/link";
 import LogoMobile from "../logos/logo-mobile";
 import { cn } from "@/lib/utils";
 import { kobe } from "@/app/fonts/fonts";
-import { FaInstagram, FaFacebook, FaSpotify } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaSpotify, FaWhatsapp } from "react-icons/fa";
 import {
   Accordion,
   AccordionContent,
@@ -41,7 +39,7 @@ export default function menu() {
       <SheetContent side="top" className="h-full p-0 bg-td-beige">
         <SheetHeader>
           <div className="sticky lg:px-12 xl:h-[101px] top-0 z-50 w-full  text-td-black h-[80px] px-4">
-            <div className="mx-auto max-w-[1400px] flex flex-row items-center h-full justify-between w-full">
+            <div className="mx-auto max-w-content flex flex-row items-center h-full justify-between w-full">
               <Link className="h-7" href="/">
                 <SheetClose>
                   <div className="lg:hidden">
@@ -52,7 +50,39 @@ export default function menu() {
                   </div>
                 </SheetClose>
               </Link>
-              <SheetClose className="bg-transparent transform -translate-x-1.5">
+              <div className="hidden lg:flex flex-row space-x-8 items-center">
+                <FaWhatsapp size="38" className="mr-2" />
+                <Button variant="black">
+                  <p className="text-2xl px-4 py-4">book now</p>
+                </Button>
+
+                <SheetClose className="bg-transparent transform -translate-x-1.5">
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="2.82812"
+                      width="40"
+                      height="4"
+                      transform="rotate(45 2.82812 0)"
+                      fill="#181E1B"
+                    />
+                    <rect
+                      x="31.1094"
+                      y="2.82812"
+                      width="40"
+                      height="4"
+                      transform="rotate(135 31.1094 2.82812)"
+                      fill="#181E1B"
+                    />
+                  </svg>
+                </SheetClose>
+              </div>
+              <SheetClose className="block lg:hidden bg-transparent transform -translate-x-1.5">
                 <svg
                   width="28"
                   height="28"

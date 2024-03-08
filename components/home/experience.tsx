@@ -126,7 +126,7 @@ export default function Experience() {
       <FadeIn from="right" threshold={0.25}>
         <div className="lg:hidden flex overflow-x-scroll hide-scroll-bar">
           <div className="flex flex-nowrap px-4 overflow-x-visible gap-x-4">
-            {data.experiences.map((experience, i) => {
+            {data.experiences.map((experience) => {
               return (
                 <ExperienceCard key={experience.id} experience={experience} />
               );
@@ -151,7 +151,7 @@ export default function Experience() {
             modules={[FreeMode, Navigation, Mousewheel]}
             className="mySwiper !overflow-visible"
           >
-            {data.experiences.map((experience, i) => {
+            {data.experiences.map((experience) => {
               return (
                 <SwiperSlide
                   key={experience.id}
