@@ -18,7 +18,7 @@ function DesktopNavBar() {
         </Link>
         <div className="flex flex-row items-center space-x-8">
           <FaWhatsapp size="38" className="mr-2" />
-          <Button variant="secondary">
+          <Button variant="whitenoborder">
             <p className="text-2xl px-4 py-4">book now</p>
           </Button>
           <Menu />

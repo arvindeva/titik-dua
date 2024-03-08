@@ -55,10 +55,16 @@ function ExperienceCard() {
             </p>
           </div>
           <div className="buttons flex flex-row gap-x-3">
-            <Button className="w-1/2 h-9 text-base border-td-black lg:text-xl lg:h-[47px]">
+            <Button
+              className="w-1/2 h-9 text-base border-td-black lg:text-xl lg:h-[47px]"
+              variant="primary"
+            >
               Register
             </Button>
-            <Button className="w-1/2 h-9 text-base bg-transparent border-2 border-td-black text-td-black focus:bg-td-white lg:text-xl lg:h-[47px]">
+            <Button
+              className="w-1/2 h-9 text-base lg:text-xl lg:h-[47px]"
+              variant="beige"
+            >
               Details
             </Button>
           </div>

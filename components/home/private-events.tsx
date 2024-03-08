@@ -54,8 +54,13 @@ export default function PrivateEvents() {
             lineup of designed-led exhibitions, innovative talks, and workshops.
           </p>
           <div className="w-full lg:w-auto flex flex-row gap-x-3">
-            <Button className="w-1/2 lg:w-[180px] text-xl">Contact us</Button>
-            <Button className="w-1/2 lg:w-[180px] bg-td-white text-td-black border-2 border-td-black text-xl focus:bg-td-beige">
+            <Button className="w-1/2 lg:w-[180px] text-xl" variant="primary">
+              Contact us
+            </Button>
+            <Button
+              className="w-1/2 lg:w-[180px] text-xl"
+              variant="transparent"
+            >
               Read more
             </Button>
           </div>

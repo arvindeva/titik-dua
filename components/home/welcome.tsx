@@ -23,8 +23,8 @@ export default function Welcome() {
             talks on culture, innovation, and wellness.
           </p>
           <Button
-            className="w-full lg:w-auto lg:text-2xl font-medium lg:px-7"
-            variant="black"
+            className="w-full lg:w-auto text-xl lg:text-2xl font-medium lg:px-7"
+            variant="primary"
           >
             More About Us
           </Button>

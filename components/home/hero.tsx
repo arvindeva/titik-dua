@@ -49,7 +49,7 @@ function CheckAvailability() {
         </div>
         <div className="flex flex-col">
           <label className="invisible">check availability</label>
-          <Button type="submit" className="text-xl px-6 bg-td-daun">
+          <Button type="submit" className="text-xl px-6" variant="daun">
             Check Availability
           </Button>
         </div>

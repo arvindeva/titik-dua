@@ -66,7 +66,10 @@ function EventCard({ event }: EventCardProps) {
             </p>
           </div>
           <div className="buttons flex flex-row gap-x-2">
-            <Button className="w-full h-9 lg:h-12 text-base lg:text-xl bg-transparent border-2 border-td-white">
+            <Button
+              className="w-full h-9 lg:h-12 text-base lg:text-xl "
+              variant="blackwhiteborder"
+            >
               Details
             </Button>
           </div>

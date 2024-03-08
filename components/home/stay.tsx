@@ -46,10 +46,16 @@ function RoomCard({ room }: RoomCardProps) {
             {room.description}
           </p>
           <div className="buttons flex flex-row gap-x-2">
-            <Button className="w-1/2 h-9 text-base lg:h-[47px] lg:text-xl">
+            <Button
+              className="w-1/2 h-9 text-base lg:h-[47px] lg:text-xl"
+              variant="primary"
+            >
               Book Now
             </Button>
-            <Button className="w-1/2 h-9 lg:h-[47px] text-base lg:text-xl bg-transparent text-td-black border-[2px] border-td-black focus:bg-td-white">
+            <Button
+              className="w-1/2 h-9 lg:h-[47px] text-base lg:text-xl"
+              variant="beige"
+            >
               Details
             </Button>
           </div>
