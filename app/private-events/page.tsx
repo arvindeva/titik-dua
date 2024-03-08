@@ -5,6 +5,7 @@ import ImageGrid from "@/components/private-events/image-grid";
 import Spaces from "@/components/private-events/spaces";
 import Wedding from "@/components/private-events/wedding";
 import CTAMobile from "@/components/ui/cta-mobile";
+import Link from "next/link";
 
 export default function PrivateEventsPage() {
   return (
@@ -23,9 +24,11 @@ export default function PrivateEventsPage() {
           to an art gallery to meeting rooms that can accommodate corporate
           events, wellness retreats, intimate weddings and more.
         </p>
-        <Button variant="black" className="w-full mb-10">
-          Get in touch
-        </Button>
+        <Link href="/contact">
+          <Button variant="black" className="w-full mb-10">
+            Get in touch
+          </Button>
+        </Link>
         <ImageGrid />
       </section>
       <Spaces />

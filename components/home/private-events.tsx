@@ -9,6 +9,7 @@ import {
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export default function PrivateEvents() {
   return (
@@ -54,15 +55,19 @@ export default function PrivateEvents() {
             lineup of designed-led exhibitions, innovative talks, and workshops.
           </p>
           <div className="w-full lg:w-auto flex flex-row gap-x-3">
-            <Button className="w-1/2 lg:w-[180px] text-xl" variant="primary">
-              Contact us
-            </Button>
-            <Button
-              className="w-1/2 lg:w-[180px] text-xl"
-              variant="transparent"
-            >
-              Read more
-            </Button>
+            <Link href="/contact">
+              <Button className="w-1/2 lg:w-[180px] text-xl" variant="primary">
+                Contact us
+              </Button>
+            </Link>
+            <Link href="/private-events">
+              <Button
+                className="w-1/2 lg:w-[180px] text-xl"
+                variant="transparent"
+              >
+                Read more
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

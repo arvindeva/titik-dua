@@ -1,6 +1,7 @@
 import { Button } from "../ui/button";
 import { kobe } from "@/app/fonts/fonts";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export default function Welcome() {
   return (
@@ -22,12 +23,14 @@ export default function Welcome() {
             contemporary take on design, gastronomy, and immersive workshops and
             talks on culture, innovation, and wellness.
           </p>
-          <Button
-            className="w-full lg:w-auto text-xl lg:text-2xl font-medium lg:px-7"
-            variant="primary"
-          >
-            More About Us
-          </Button>
+          <Link href="/about">
+            <Button
+              className="w-full lg:w-auto text-xl lg:text-2xl font-medium lg:px-7"
+              variant="primary"
+            >
+              More About Us
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

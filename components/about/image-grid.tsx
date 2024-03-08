@@ -9,6 +9,7 @@ export default function ImageGrid() {
             className="h-auto max-w-full"
             src="/images/about/1.jpg"
             alt="swimming-pool"
+            priority
             width={1200}
             height={800}
           />
@@ -22,6 +23,7 @@ export default function ImageGrid() {
                 alt="hotel"
                 width={600}
                 height={500}
+                priority
               />
             </div>
             <div>
@@ -31,6 +33,7 @@ export default function ImageGrid() {
                 alt="hotel"
                 width={600}
                 height={500}
+                priority
               />
             </div>
             <div>
@@ -40,6 +43,7 @@ export default function ImageGrid() {
                 alt="hotel"
                 width={600}
                 height={500}
+                priority
               />
             </div>
           </div>
@@ -51,6 +55,7 @@ export default function ImageGrid() {
                 alt="hotel"
                 width={600}
                 height={500}
+                priority
               />
             </div>
             <div>
@@ -60,6 +65,7 @@ export default function ImageGrid() {
                 alt="hotel"
                 width={600}
                 height={500}
+                priority
               />
             </div>
             <div>
@@ -69,6 +75,7 @@ export default function ImageGrid() {
                 alt="hotel"
                 width={600}
                 height={500}
+                priority
               />
             </div>
           </div>
@@ -76,18 +83,20 @@ export default function ImageGrid() {
       </section>
 
       <section className="hidden xl:block px-4 py-10">
-        <div className="grid grid-rows-5 grid-flow-col gap-4 h-[650px]">
-          <div className="row-span-3 col-span-2 bg-fuchsia-500 overflow-hidden">
+        <div className="grid grid-rows-5 grid-flow-col gap-4 h-[650px] xl:h-[800px]">
+          <div className="row-span-3 col-span-2 bg-zinc-400 overflow-hidden">
             <div className="relative h-full w-full">
               <Image
-                className="object-cover"
+                className="object-cover h-full w-full"
                 src="/images/about/1.jpg"
                 alt="swimming-pool"
                 fill
+                sizes="(max-width: 768px) 500px, (max-width: 1200px) 700px, 500px"
+                priority
               />
             </div>
           </div>
-          <div className="row-span-2 col-span-1 bg-fuchsia-500">
+          <div className="row-span-2 col-span-1 bg-zinc-400">
             <div className="relative h-full w-full">
               <Image
                 className="object-cover"
@@ -97,7 +106,7 @@ export default function ImageGrid() {
               />
             </div>
           </div>
-          <div className="row-span-2 col-span-1 bg-fuchsia-500">
+          <div className="row-span-2 col-span-1 bg-zinc-400">
             <div className="relative h-full w-full">
               <Image
                 className="object-cover"
@@ -107,7 +116,7 @@ export default function ImageGrid() {
               />
             </div>
           </div>
-          <div className="row-span-3 bg-fuchsia-500">
+          <div className="row-span-3 bg-zinc-400">
             <div className="relative h-full w-full">
               <Image
                 className="object-cover"
@@ -117,7 +126,7 @@ export default function ImageGrid() {
               />
             </div>
           </div>
-          <div className="row-span-2 bg-fuchsia-500">
+          <div className="row-span-2 bg-zinc-400">
             <div className="relative h-full w-full">
               <Image
                 className="object-cover"
@@ -127,7 +136,7 @@ export default function ImageGrid() {
               />
             </div>
           </div>
-          <div className="row-span-2 bg-fuchsia-500">
+          <div className="row-span-2 bg-zinc-400">
             <div className="relative h-full w-full">
               <Image
                 className="object-cover"
@@ -137,7 +146,7 @@ export default function ImageGrid() {
               />
             </div>
           </div>
-          <div className="row-span-3 bg-fuchsia-500">
+          <div className="row-span-3 bg-zinc-400">
             <div className="relative h-full w-full">
               <Image
                 className="object-cover"
