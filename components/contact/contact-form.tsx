@@ -33,10 +33,8 @@ export function ContactForm() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    console.log("asd");
     alert(
-      `submitting the following \nname: ${values.name} \nemail: ${values.email} \nmessage: ${values.message}`
+      `submitting the following \nname: ${values.name} \nemail: ${values.email} \nmessage: ${values.message}`,
     );
   }
   return (
