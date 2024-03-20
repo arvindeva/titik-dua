@@ -112,7 +112,7 @@ export default function menu() {
           <div>
             <ul
               className={cn(
-                "flex flex-col space-y-3 text-[32px] font-bold mt-8 leading-none",
+                "flex flex-col space-y-3 text-[32px] font-bold mt-8 leading-none lg:hidden",
                 kobe.className,
               )}
             >
@@ -175,6 +175,77 @@ export default function menu() {
                 </Link>
               </li>
             </ul>
+
+            <div
+              className={cn(
+                "hidden lg:flex flex-row text-[40px] gap-x-48 font-bold mt-16 leading-none max-w-content mx-auto px-12",
+                kobe.className,
+              )}
+            >
+              <ul className="text-left space-y-12">
+                <li>
+                  <Link href="/stay">
+                    <SheetClose>stay</SheetClose>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/events">
+                    <SheetClose>what&apos;s on</SheetClose>
+                  </Link>
+                </li>
+                <li>
+                  <Accordion type="single" collapsible>
+                    <AccordionItem value="item-1">
+                      <AccordionTrigger className="font-bold no-underline hover:no-underline">
+                        restaurants & bars
+                      </AccordionTrigger>
+                      <AccordionContent>
+                        <ul className="flex flex-col gap-y-3 pt-3">
+                          <li>
+                            <Link href="/ramu-kitchen">
+                              <SheetClose>ramu kitchen</SheetClose>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/rooftop-bar">
+                              <SheetClose>rooftop bar</SheetClose>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/pool-bar">
+                              <SheetClose>pool bar</SheetClose>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/coca-bar">
+                              <SheetClose>coca bar</SheetClose>
+                            </Link>
+                          </li>
+                        </ul>
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                </li>
+              </ul>
+              <ul className="text-left space-y-12">
+                <li>
+                  <Link href="/private-events">
+                    <SheetClose>private events</SheetClose>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about">
+                    <SheetClose>about us</SheetClose>
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/contact">
+                    <SheetClose>contact</SheetClose>
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
             <ul className="flex flex-row space-x-4">
