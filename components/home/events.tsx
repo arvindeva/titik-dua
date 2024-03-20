@@ -82,8 +82,8 @@ function EventCard({ event }: EventCardProps) {
 
 export default function Events() {
   return (
-    <section className="bg-td-black text-td-white w-full pt-10 pb-10 lg:pb-16 overflow-hidden lg:px-12">
-      <div className="mx-auto px-4 lg:px-0 max-w-content">
+    <section className="bg-td-black text-td-white w-full pt-10 pb-10 lg:pb-16 overflow-hidden lg:px-0">
+      <div className="mx-auto px-4 lg:px-0 max-w-content lg:px-12">
         <FadeIn from="bottom">
           <h1
             className={cn(
@@ -115,7 +115,7 @@ export default function Events() {
       </div>
 
       <FadeIn from="right" threshold={0.15}>
-        <div className="lg:hidden flex overflow-x-scroll pb-4 px-4 hide-scroll-bar">
+        <div className="lg:hidden flex overflow-x-scroll pb-4 px-4 hide-scroll-bar lg:px-12">
           <div className="flex flex-nowrap !overflow-x-visible gap-x-4">
             <EventCard event={data.featuredEvents[0]} />
             <EventCard event={data.featuredEvents[1]} />
@@ -123,7 +123,7 @@ export default function Events() {
             <EventCard event={data.featuredEvents[3]} />
           </div>
         </div>
-        <div className="hidden mx-auto lg:block max-w-content">
+        <div className="hidden mx-auto lg:block max-w-content lg:px-12">
           <Swiper
             slidesPerView={"auto"}
             mousewheel={{

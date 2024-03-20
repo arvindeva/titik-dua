@@ -87,8 +87,8 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
 
 export default function Experience() {
   return (
-    <section className="bg-td-beige text-td-black w-full py-10 !overflow-hidden lg:px-12">
-      <div className="px-4 max-w-content mx-auto lg:px-0">
+    <section className="bg-td-beige text-td-black w-full py-10 !overflow-hidden lg:px-0">
+      <div className="px-4 max-w-content mx-auto lg:px-12">
         <FadeIn from="bottom">
           <h1
             className={cn(
@@ -136,7 +136,7 @@ export default function Experience() {
       </FadeIn>
 
       <FadeIn from="right" threshold={0.25}>
-        <div className="hidden !max-w-content mx-auto lg:block hide-scroll-bar">
+        <div className="hidden !max-w-content mx-auto lg:block hide-scroll-bar lg:px-12">
           <Swiper
             slidesPerView={"auto"}
             mousewheel={{

@@ -14,8 +14,8 @@ import FadeIn from "../animation/fade-in";
 
 export default function PrivateEvents() {
   return (
-    <section className="lg:px-12">
-      <div className="flex flex-col lg:flex-row max-w-content mx-auto">
+    <section className="">
+      <div className="flex flex-col lg:flex-row max-w-content lg:px-12 mx-auto">
         <div className="lg:w-1/2 lg:py-20 relative">
           <Carousel
             className="w-full relative"
@@ -60,8 +60,8 @@ export default function PrivateEvents() {
               workshops.
             </p>
           </FadeIn>
-          <div className="w-full lg:w-auto flex flex-row gap-x-3">
-            <Link href="/contact" className="w-1/2">
+          <div className="w-auto flex flex-row gap-x-3">
+            <Link href="/contact" className="w-1/2 lg:w-auto">
               <Button
                 className=" w-full lg:w-[180px] text-xl"
                 variant="primary"
@@ -69,7 +69,7 @@ export default function PrivateEvents() {
                 Contact us
               </Button>
             </Link>
-            <Link href="/private-events" className="w-1/2">
+            <Link href="/private-events" className="w-1/2 lg:w-auto">
               <Button
                 className=" w-full lg:w-[180px] text-xl"
                 variant="transparent"

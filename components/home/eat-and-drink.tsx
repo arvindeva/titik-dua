@@ -59,8 +59,8 @@ function EatAndDrinkCard({ restaurant }: EatAndDrinkCardProps) {
 
 export default function EatAndDrink() {
   return (
-    <section className="bg-td-beige text-td-black w-full py-10 overflow-visible lg:px-12">
-      <div className="px-4 lg:px-0 max-w-content mx-auto">
+    <section className="bg-td-beige text-td-black w-full py-10 overflow-visible lg:px-0">
+      <div className="px-4 lg:px-12 max-w-content mx-auto">
         <FadeIn from="bottom">
           <h1
             className={cn(
@@ -84,7 +84,7 @@ export default function EatAndDrink() {
       </div>
       <div className="overflow-hidden">
         <FadeIn from="right">
-          <div className="flex overflow-x-scroll max-w-content mx-auto hide-scroll-bar">
+          <div className="flex overflow-x-scroll lg:px-12 max-w-content mx-auto hide-scroll-bar">
             <div className="px-4 lg:px-0 flex flex-nowrap overflow-x-visible gap-x-4 hide-scroll-bar">
               {data.foodsAndDrinks.map((restaurant) => {
                 return (

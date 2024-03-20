@@ -68,8 +68,8 @@ function RoomCard({ room }: RoomCardProps) {
 
 export default function Stay() {
   return (
-    <section className="bg-white w-full py-5 lg:py-12 !overflow-hidden lg:px-12">
-      <div className="mx-auto px-4 lg:px-0 max-w-content">
+    <section className="bg-white w-full py-5 lg:py-12 !overflow-hidden lg:px-0">
+      <div className="mx-auto px-4 lg:px-12 max-w-content">
         <h1
           className={cn(
             "text-[40px] font-bold leading-none mb-4 lg:text-[64px]",
@@ -90,7 +90,7 @@ export default function Stay() {
         </div>
       </FadeIn>
       <FadeIn from="right" threshold={0.3}>
-        <div className="hidden mx-auto lg:block max-w-content">
+        <div className="hidden mx-auto lg:block max-w-content lg:px-12">
           <div className="w-full text-end flex flex-row items-center justify-end gap-x-2 mb-8">
             <Button
               className="home-stay-prev-button text-td-white bg-td-black h-[44px] w-[44px] p-0 active:bg-zinc-500"

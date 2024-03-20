@@ -11,15 +11,15 @@ import LogoMobile from "../logos/logo-mobile";
 
 function DesktopNavBar() {
   return (
-    <header className="hidden lg:inline-block sticky top-0 z-50 w-full bg-black text-td-white h-[101px] px-12">
-      <div className="mx-auto max-w-content flex flex-row items-center h-full justify-between w-full">
+    <header className="hidden lg:inline-block sticky top-0 z-50 w-full bg-black text-td-white h-[101px]">
+      <div className="mx-auto max-w-content flex flex-row items-center h-full justify-between w-full px-12">
         <Link href="/">
           <LogoFull color="white" />
         </Link>
         <div className="flex flex-row items-center space-x-8">
           <FaWhatsapp size="38" className="mr-2" />
           <Button variant="whitenoborder">
-            <p className="text-2xl px-4 py-4">book now</p>
+            <p className="text-2xl px-4 py-4">Book now</p>
           </Button>
           <Menu />
         </div>

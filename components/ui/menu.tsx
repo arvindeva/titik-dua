@@ -38,8 +38,8 @@ export default function menu() {
       </SheetTrigger>
       <SheetContent side="top" className="h-full p-0 bg-td-beige">
         <SheetHeader>
-          <div className="sticky lg:px-12 xl:h-[101px] top-0 z-50 w-full  text-td-black h-[80px] px-4">
-            <div className="mx-auto max-w-content flex flex-row items-center h-full justify-between w-full">
+          <div className="sticky xl:h-[101px] top-0 z-50 w-full  text-td-black h-[80px] px-4 lg:px-0">
+            <div className="mx-auto max-w-content flex flex-row items-center h-full justify-between w-full lg:px-12">
               <Link className="h-7" href="/">
                 <SheetClose>
                   <div className="lg:hidden">
@@ -53,7 +53,7 @@ export default function menu() {
               <div className="hidden lg:flex flex-row space-x-8 items-center">
                 <FaWhatsapp size="38" className="mr-2" />
                 <Button variant="black">
-                  <p className="text-2xl px-4 py-4">book now</p>
+                  <p className="text-2xl px-4 py-4">Book now</p>
                 </Button>
 
                 <SheetClose className="bg-transparent transform -translate-x-1.5">
@@ -178,11 +178,11 @@ export default function menu() {
 
             <div
               className={cn(
-                "hidden lg:flex flex-row text-[40px] gap-x-48 font-bold mt-16 leading-none max-w-content mx-auto px-12",
+                "hidden lg:flex flex-row text-[40px] gap-x-48 font-bold mt-4 leading-none max-w-content mx-auto px-12",
                 kobe.className,
               )}
             >
-              <ul className="text-left space-y-12">
+              <ul className="text-left space-y-6">
                 <li>
                   <Link href="/stay">
                     <SheetClose>stay</SheetClose>
@@ -227,7 +227,7 @@ export default function menu() {
                   </Accordion>
                 </li>
               </ul>
-              <ul className="text-left space-y-12">
+              <ul className="text-left space-y-6">
                 <li>
                   <Link href="/private-events">
                     <SheetClose>private events</SheetClose>
@@ -247,21 +247,21 @@ export default function menu() {
               </ul>
             </div>
           </div>
-          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-            <ul className="flex flex-row space-x-4">
+          <div className="absolute bottom-10  right-1/2 lg:right-12 transform translate-x-1/2 lg:translate-x-0">
+            <ul className="flex flex-row space-x-4 lg:space-x-8">
               <li>
-                <Link href="/">
-                  <FaInstagram size="18px" />
+                <Link href="/" className="text-xl lg:text-4xl">
+                  <FaInstagram />
                 </Link>
               </li>
               <li>
-                <Link href="/">
-                  <FaFacebook size="18px" />
+                <Link href="/" className="text-xl lg:text-4xl">
+                  <FaFacebook />
                 </Link>
               </li>
               <li>
-                <Link href="/">
-                  <FaSpotify size="18px" />
+                <Link href="/" className="text-xl lg:text-4xl">
+                  <FaSpotify />
                 </Link>
               </li>
             </ul>
