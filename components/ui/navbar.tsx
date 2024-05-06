@@ -2,12 +2,10 @@
 
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
-
 import { Button } from "./button";
-import Menu from "./menu";
-
+import Menu from "@/components/ui/menu";
 import LogoFull from "@/components/logos/logo-full";
-import LogoMobile from "../logos/logo-mobile";
+import LogoMobile from "@/components/logos/logo-mobile";
 
 function DesktopNavBar() {
   return (

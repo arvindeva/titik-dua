@@ -43,7 +43,7 @@ function EventCard({ event }: EventCardProps) {
           <div
             className={cn(
               "font-semibold text-3xl lg:text-[40px] pt-2 mb-3",
-              kobe.className,
+              kobe.className
             )}
           >
             {event.name}
@@ -83,12 +83,12 @@ function EventCard({ event }: EventCardProps) {
 export default function Events() {
   return (
     <section className="bg-td-black text-td-white w-full pt-10 pb-10 lg:pb-16 overflow-hidden lg:px-0">
-      <div className="mx-auto px-4 lg:px-0 max-w-content lg:px-12">
+      <div className="mx-auto px-4 max-w-content lg:px-12">
         <FadeIn from="bottom">
           <h1
             className={cn(
               "text-[40px] font-bold lg:text-[64px] mb-8 leading-none",
-              kobe.className,
+              kobe.className
             )}
           >
             featured events
