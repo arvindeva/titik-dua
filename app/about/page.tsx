@@ -11,7 +11,7 @@ import Stay from "@/components/about/stay";
 export default function AboutPage() {
   return (
     <main className="">
-      <section className="bg-td-beige px-4 pt-10 lg:pt-20 lg:pb-20 mx-auto lg:px-0">
+      <section className="bg-td-beige px-4 pt-10 lg:pt-20 lg:pb-20 xl:py-24 mx-auto lg:px-0">
         <div className="flex flex-col lg:flex-row lg:px-12 lg:items-center lg:gap-16">
           <div className="w-full lg:w-1/2">
             <h3 className="font-semibold mb-0.5 lg:mb-4 uppercase">about us</h3>
