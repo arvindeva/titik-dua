@@ -25,7 +25,7 @@ export default function AboutPage() {
             </h1>
           </div>
           <div className="w-full lg:w-1/2">
-            <p className="text-sm leading-tight lg:text-base mb-10 font-normal lg:leading-tight">
+            <p className="text-sm leading-tight lg:text-base xl:text-lg mb-10 font-normal lg:leading-tight">
               Titik Dua is an independent boutique hotel showcasing contemporary
               Indonesian design, art, and culture in our many creative spaces.
             </p>
