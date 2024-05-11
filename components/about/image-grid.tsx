@@ -82,7 +82,7 @@ export default function ImageGrid() {
         </div>
       </section>
 
-      <section className="hidden xl:block px-4 py-10">
+      <section className="hidden xl:block px-12 py-10">
         <div className="grid grid-rows-5 grid-flow-col gap-4 h-[650px] xl:h-[800px]">
           <div className="row-span-3 col-span-2 bg-zinc-400 overflow-hidden">
             <div className="relative h-full w-full">
