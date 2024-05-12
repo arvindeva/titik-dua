@@ -6,7 +6,7 @@ export default function StayExperience() {
   return (
     <section className="py-10 px-4 lg:px-12">
       <h1
-        className={cn("text-[40px] font-bold mb-8 lg:text-7xl", kobe.className)}
+        className={cn("text-[40px] font-bold mb-8 lg:text-6xl", kobe.className)}
       >
         stay experience
       </h1>

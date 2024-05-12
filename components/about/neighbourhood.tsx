@@ -6,19 +6,24 @@ import { Button } from "@/components/ui/button";
 
 function NeighbourhoodCard() {
   return (
-    <div className="">
-      <Card className="w-72 rounded-none border-0 bg-transparent text-td-black">
-        <div className="relative h-72 w-full bg-transparent overflow-hidden mb-2">
+    <div className="w-full">
+      <Card className="min-w-[164px] rounded-none border-0 bg-transparent text-td-black shadow-none">
+        <div className="relative  w-full bg-transparent overflow-hidden mb-2">
           <Image
-            className="object-cover w-72 h-72"
+            className="object-cover w-full h-full"
             src="/images/about/setia-cap-cili.jpg"
             alt="Sunset in the mountains"
-            width="300"
-            height="300"
+            width="800"
+            height="800"
           />
         </div>
         <div className="">
-          <div className={cn("font-semibold text-3xl mb-3", kobe.className)}>
+          <div
+            className={cn(
+              "font-semibold text-2xl mb-2 lg:mb-4 lg:text-[40px]",
+              kobe.className
+            )}
+          >
             setia cap cili
           </div>
           <p className="text-sm leading-[1.1] leading line-clamp-3 h-14 mb-2">
@@ -38,11 +43,16 @@ function NeighbourhoodCard() {
 
 export default function Neighbourhood() {
   return (
-    <section className="py-10 bg-td-beige">
-      <h1 className={cn("text-[40px] font-bold mb-8 px-4", kobe.className)}>
+    <section className="py-10 bg-td-beige lg:px-12">
+      <h1
+        className={cn(
+          "text-[40px] font-bold mb-8 px-4 lg:px-0 lg:text-6xl",
+          kobe.className
+        )}
+      >
         our neighbourhood
       </h1>
-      <div className="text-sm leading-tight flex flex-col gap-y-4 mb-10 px-4">
+      <div className="text-sm lg:text-base leading-tight flex flex-col gap-y-4 mb-10 lg:px-0 px-4 lg:w-1/2">
         <p className="">
           We&apos;re located in Peliatan Village, a stones throw from Ubud. Few
           will argue about Ubud&apos;s lure. As the epicenter of Bali&apos;s
@@ -54,9 +64,8 @@ export default function Neighbourhood() {
           innovative dining.
         </p>
       </div>
-      <div className="lg:hidden flex overflow-x-scroll pb-4 hide-scroll-bar">
-        <div className="flex flex-nowrap px-4 overflow-x-visible gap-x-4">
-          <NeighbourhoodCard />
+      <div className=" flex overflow-x-scroll pb-4 hide-scroll-bar">
+        <div className="flex flex-nowrap px-4 lg:px-0 overflow-x-visible gap-x-4">
           <NeighbourhoodCard />
           <NeighbourhoodCard />
           <NeighbourhoodCard />

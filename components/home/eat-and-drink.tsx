@@ -33,7 +33,7 @@ function EatAndDrinkCard({ restaurant }: EatAndDrinkCardProps) {
           <div
             className={cn(
               "font-semibold text-2xl mb-2 lg:mb-4 lg:text-[40px]",
-              kobe.className,
+              kobe.className
             )}
           >
             {restaurant.name}
@@ -65,7 +65,7 @@ export default function EatAndDrink() {
           <h1
             className={cn(
               "text-[40px] font-bold lg:text-[64px] mb-8 leading-none",
-              kobe.className,
+              kobe.className
             )}
           >
             eat and drink
