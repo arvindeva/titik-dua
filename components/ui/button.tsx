@@ -30,7 +30,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         icon: "rounded-full bg-none hover:bg-primary",
         clear:
-          "bg-transparent text-td-black border-2 border-td-black text-xl active:bg-td-black active:text-td-white focus:text-td-black focus:bg-transparent",
+          "bg-transparent text-td-black border border-td-black text-xl active:bg-td-black active:text-td-white focus:text-td-black focus:bg-transparent",
         black:
           "text-xl font-medium text-td-white bg-td-black active:bg-td-white active:border-2 active:border-td-black active:text-td-black",
       },
@@ -45,7 +45,7 @@ const buttonVariants = cva(
       variant: "default",
       size: "default",
     },
-  },
+  }
 );
 
 export interface ButtonProps
@@ -64,7 +64,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
       />
     );
-  },
+  }
 );
 Button.displayName = "Button";
 
